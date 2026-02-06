@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-sand-50 text-sand-900;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .prose-custom {
+    max-width: none;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .prose-custom h1 {
+    font-size: 2.25rem;
+    font-family: var(--font-lora), Georgia, serif;
+    color: #5f462d;
+    margin-bottom: 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .prose-custom h1 {
+      font-size: 3rem;
+    }
+  }
+
+  .prose-custom h2 {
+    font-size: 1.875rem;
+    font-family: var(--font-lora), Georgia, serif;
+    color: #7d5a39;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  @media (min-width: 768px) {
+    .prose-custom h2 {
+      font-size: 2.25rem;
+    }
+  }
+
+  .prose-custom h3 {
+    font-size: 1.5rem;
+    font-family: var(--font-lora), Georgia, serif;
+    color: #7d5a39;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  @media (min-width: 768px) {
+    .prose-custom h3 {
+      font-size: 1.875rem;
+    }
+  }
+
+  .prose-custom p {
+    color: #9d7047;
+    line-height: 1.75;
+    margin-bottom: 1.5rem;
+  }
+
+  .prose-custom a {
+    color: #b95436;
+    text-decoration: underline;
+    text-decoration-color: #e9af94;
+    transition: color 0.3s, text-decoration-color 0.3s;
+  }
+
+  .prose-custom a:hover {
+    color: #9a4330;
+    text-decoration-color: #d16943;
+  }
+
+  .prose-custom img {
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .prose-custom blockquote {
+    border-left: 4px solid #dd8865;
+    padding-left: 1.5rem;
+    font-style: italic;
+    color: #b88a5e;
+  }
+
+  .prose-custom ul, .prose-custom ol {
+    color: #9d7047;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .prose-custom li {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .btn-primary {
+    @apply bg-terracotta-500 hover:bg-terracotta-600 text-white px-6 py-3 rounded-full font-medium transition-all duration-300 shadow-md hover:shadow-lg;
+  }
+
+  .btn-secondary {
+    @apply bg-sage-500 hover:bg-sage-600 text-white px-6 py-3 rounded-full font-medium transition-all duration-300 shadow-md hover:shadow-lg;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300;
+  }
+}
