@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter, Lora } from 'next/font/google';
+import Script from 'next/script';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -37,12 +38,34 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${lora.variable}`}>
+      <head>
+        {/* Netlify Identity Widget for authentication */}
+        <Script
+          src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+          strategy="afterInteractive"
+        />
+      </head>
       <body className="font-sans">
         <Header />
         <main className="min-h-screen">
           {children}
         </main>
         <Footer />
+
+        {/* Netlify Identity redirect handler */}
+        <Script id="netlify-identity-redirect" strategy="afterInteractive">
+          {`
+            if (window.netlifyIdentity) {
+              window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                  window.netlifyIdentity.on("login", () => {
+                    document.location.href = "/admin/";
+                  });
+                }
+              });
+            }
+          `}
+        </Script>
       </body>
     </html>
   );
