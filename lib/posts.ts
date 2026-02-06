@@ -55,11 +55,11 @@ export function getAllPosts(): Post[] {
   });
 }
 
-export function getPostBySlug(slug: string): Post & { htmlContent: string } {
+export async function getPostBySlug(slug: string): Promise<Post & { htmlContent: string }> {
   const fullPath = path.join(postsDirectory, `${slug}.md`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
   const { data, content } = matter(fileContents);
-  const htmlContent = marked(content);
+  const htmlContent = await marked(content);
 
   return {
     slug,

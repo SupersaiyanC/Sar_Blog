@@ -1,9 +1,9 @@
 import { getSiteSettings } from '@/lib/posts';
 import { marked } from 'marked';
 
-export default function About() {
+export default async function About() {
   const settings = getSiteSettings();
-  const aboutHtml = marked(settings.about || '');
+  const aboutHtml = await marked(settings.about || '');
 
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
