@@ -6,7 +6,7 @@ excerpt: "Italy is renowned for its ancient worlds, sizzling summers, and lush
   Tuscan hills, but I discovered its beauty in a place quite far away from the
   hustle and bustle of its tourist cities. "
 category: Travel
-featured: false
+featured: true
 ---
 When my college friend Ariel told me that it was possible to live and work on a random farm in the world, I thought it had to be a scam. My whole life, I had dreamed of experiencing true cultivation from land. My family used to joke that I was a "Renaissance" girl, not just because of my love of the arts (ballet and piano girl since I was six), but because of my love of the outdoors. You could find me foraging random plants and dreaming of a reality where I really knew how to live off the land.
 
