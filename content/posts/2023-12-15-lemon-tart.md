@@ -24,14 +24,16 @@ From some brief research, Tarte au citron was created in the 19th century, and i
 
 The base for the tart is a pâte sucrée, a simple short pastry made with the creaming method. Butter is beaten until creamy, and then combined with icing sugar, egg, and flour.
 
-**Crust Ingredients:**
+**Pâte Sucrée Ingredients:**
 
-* 1¼ cups (155g) all-purpose flour
-* ½ cup (60g) powdered sugar
-* ¼ tsp salt
-* ½ cup (113g) cold butter, cubed
-* 1 egg yolk
-* 1-2 tbsp cold water
+* 125g all-purpose flour
+* 50g powdered sugar
+* 1/8 tsp salt
+* 50g room temperature butter
+* 30g egg
+* pinch of lemon zest (my addition)
+
+Making the dough was simple enough. But I ran into some issues when rolling the dough and placing it in the tart mold. I tried out some new rolling pin fasteners, starting with 1/4 inch. This seemed too thin when rolling out the dough, so I tried the 1/8 inch, which was too thin. Depsite this I continued on, had some breakage issues, and prayed that time in the freezer and in the oven would fix my error.
 
 ## The Lemon Filling
 
