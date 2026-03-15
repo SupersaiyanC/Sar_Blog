@@ -1,8 +1,9 @@
 ---
-title: French Lemon Tart (Tarte au Citron)
-date: 2023-12-15T14:00:00.000Z
+title: FERRANDI Pâtesserie Diaries - Tarte au Citron
+date: 2026-03-15T14:11:00.000-04:00
 featuredImage: https://images.unsplash.com/photo-1519915212116-7cfef71f1d3e?w=1200&h=800&fit=crop
-excerpt: This classic French lemon tart is the perfect balance of sweet and tart, with a buttery shortbread crust and silky smooth filling. Easier than you think!
+excerpt: Baking my way through the FERRANDI Paris pâtisserie textbook to maybe
+  become a pastry chef?
 category: Baking
 featured: false
 tags:
