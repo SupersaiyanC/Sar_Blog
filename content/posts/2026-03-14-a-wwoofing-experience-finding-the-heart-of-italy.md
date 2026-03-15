@@ -15,3 +15,7 @@ Ariel and I honed in on Italy as the country we would do our WWOOFing experience
 Around 20 hours after leaving home, I found myself at a train station in Stradella, a town in the provence of Pavia, an area in Lombardy very close to the Emilia Romagna border. We were immensely nervous, stomachs churning, worried and hoping that our upcoming experience would be positive.
 
 We were picked up from the train station by our hosts husband, in a tiny and old grey Fiat Punto. I remember a flicker of fear as a hauled my big backpack into the back of the car that I was simply getting into a car with a random man. He didn't speak any English, so we exchanged sentances using a translator app. As we drove, the flat landscape suddenly burst into rolling hills - all of vineyards. The hills were bathed in fog, and were barely lit by the light of dusk. Andrea told us that the weather was not so good today, "but when the sun comes out, time stands still".
+
+![](/images/uploads/img_3589-2.jpg)
+
+He was right. Over the next three weeks, life was simply magic.
