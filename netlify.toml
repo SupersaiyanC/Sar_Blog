@@ -2,6 +2,16 @@
   command = "npm run build"
   publish = "out"
 
+# Skip builds on draft branches created by the editorial workflow.
+# This means saving a draft in the CMS will NOT trigger a deploy.
+# Only publishing (merging to main) triggers a production build.
+[context.branch-deploy]
+  ignore = "exit 1"
+
+# Also skip deploy previews for pull requests (draft PRs from editorial workflow)
+[context.deploy-preview]
+  ignore = "exit 1"
+
 [[redirects]]
   from = "/admin/*"
   to = "/admin/index.html"
