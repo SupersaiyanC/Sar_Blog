@@ -1,7 +1,7 @@
 ---
 title: FERRANDI Pâtesserie Diaries - Tarte au Citron
 date: 2026-03-15T14:11:00.000-04:00
-featuredImage: https://images.unsplash.com/photo-1519915212116-7cfef71f1d3e?w=1200&h=800&fit=crop
+featuredImage: /images/uploads/img_3835-1-.jpg
 excerpt: "Day 1: Baking my way through the FERRANDI Paris pâtisserie textbook to
   maybe become a pastry chef?"
 category: Baking
@@ -35,20 +35,18 @@ The base for the tart is a pâte sucrée, a simple short pastry made with the cr
 
 Making the dough was simple enough. But I ran into some issues when rolling the dough and placing it in the tart mold. I tried out some new rolling pin fasteners, starting with 1/4 inch. This seemed too thin when rolling out the dough, so I tried the 1/8 inch, which was too thin. Depsite this I continued on, had some breakage issues, and prayed that time in the freezer and in the oven would fix my error.
 
-## The Lemon Filling
-
-This isn't your grandmother's lemon curd – it's lighter, more elegant, and perfectly smooth.
+## The Lemon Curd Filling
 
 **Filling Ingredients:**
 
-* 4 large eggs
+* 150g eggs beaten
 * ¾ cup (150g) granulated sugar
-* Zest of 2 lemons
-* ½ cup (120ml) fresh lemon juice (about 3-4 lemons)
+* 2/3 cup fresh lemon juice (about 5-6 lemons)
 * Pinch of salt
-* ½ cup (113g) unsalted butter, cubed
+* 70g unsalted butter, room temperature
+* 1.5 teaspoons gelatin, bloomed in 1 tablespoon of lemon juice
 
-## Step-by-Step Process
+
 
 ### Making the Crust:
 
