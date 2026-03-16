@@ -22,6 +22,8 @@ Today is Day 1, and we start with the first recipe in the book - Tarte au Citron
 
 From some brief research, Tarte au citron was created in the 19th century, and is today a staple in most French pâtisseries. The traditional french version is not topped with any meringue like a lemon meringue pie. Instead we can aim to achieve a very pure lemon citrus flavor that isn't too sour or sweet.
 
+![](/images/uploads/img_3841.jpg)
+
 The base for the tart is a pâte sucrée, a simple short pastry made with the creaming method. Butter is beaten until creamy, and then combined with icing sugar, egg, and flour.
 
 **Pâte Sucrée Ingredients:**
