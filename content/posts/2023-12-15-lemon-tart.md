@@ -1,7 +1,7 @@
 ---
 title: FERRANDI Pâtesserie Diaries - Tarte au Citron
 date: 2026-03-15T14:11:00.000-04:00
-featuredImage: /images/uploads/img_3835-1-.jpg
+featuredImage: /images/uploads/img_3841.jpg
 excerpt: "Day 1: Baking my way through the FERRANDI Paris pâtisserie textbook to
   maybe become a pastry chef?"
 category: Baking
@@ -72,6 +72,8 @@ Making the dough was simple enough. But I ran into some issues when rolling the 
 2. *Use less gelatin:* The book recommended 1.5 sheets of gelatin, I used what I found to be the equivalent in powder gelatin, around 1tsp.
 
 Maybe next time I will cook the filling to 170F, and then add very little to no gelatin. Perhaps this will be enough to thicken the filling without making it jelly-like.
+
+![](/images/uploads/img_3835-1-.jpg)
 
 ## Final Thoughts
 
