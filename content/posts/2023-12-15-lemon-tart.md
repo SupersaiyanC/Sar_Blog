@@ -14,7 +14,7 @@ tags:
 ---
 Ok, this is the first of what I hope is many posts. I've been toying with the idea of becoming a pastry chef recently. Well, recently is a lie, it's something I have been dreaming off my whole life. For the past 10 years, I've spent a lot of time baking: croissants, macarons, cakes, pastries, and everything inbetween. For Christmas in 8th grade, I asked for and recieved the FERRANDI Paris: French Pâtesserie cookbook. The book is more of a textbook on the fundamentals of french pâtesserie, and has recipies organized in three levels of difficulty. 
 
-I think before I take the jump and enroll in pastry school, I want a taste of what this book has to offer. I plan to bake through as much of the book as possible, *Julie and Julia* style. I will start with all of the level one recipes, then move onto level two, then three. Believe me, I'm not expecting to be a professional pastry chef by the end of this, but I hope to hone in and build upon some skills, and more importantly, eat and share some delicious creations.
+I think before I take the jump and enroll in pastry school, I want a taste of what this book has to offer. I plan to bake through as much of the book as possible, *Julie and Julia* style. I will start with all of the level one recipes, then move onto level two, then three. Believe me, I'm not expecting to be a professional pastry chef by the end of this, but I hope to hone in and build upon some skills, and more importantly, eat and share some delicious creations. I will document each recipe here along with the ingredients and my method, as well as my mistakes. I don't intend these recipes to be followed by others necessarily, but rather am focused on documenting my journey.
 
 Today is Day 1, and we start with the first recipe in the book - Tarte au Citron.
 
@@ -46,48 +46,33 @@ Making the dough was simple enough. But I ran into some issues when rolling the 
 * 70g unsalted butter, room temperature
 * 1.5 teaspoons gelatin, bloomed in 1 tablespoon of lemon juice
 
-
-
 ### Making the Crust:
 
-1. Pulse flour, powdered sugar, and salt in food processor
-2. Add cold butter, pulse until mixture resembles coarse crumbs
-3. Add egg yolk and water, pulse just until dough comes together
-4. Press into tart pan, prick with fork, freeze 30 minutes
-5. Blind bake at 375°F for 20 minutes, then 10 minutes without weights
+1. I creamed the room temperature butter with a whisk, and then added the sugar, eggs, and salt.
+2. After whisking the ingredients together, I added the flour and whisked until just combined.
+3. Once the dough came together I flattened it into a 1/2 inch tall disk, wrapped it in plastic, and chilled it in the fridge for 2 hours.
 
 ### Making the Filling:
 
-1. Whisk eggs, sugar, lemon zest, juice, and salt in a saucepan
-2. Cook over medium-low heat, stirring constantly, until thick (8-10 minutes)
-3. Remove from heat, whisk in butter until smooth
-4. Strain through fine-mesh sieve
-5. Pour into baked crust
-
-### Assembly:
-
-1. Pour warm filling into crust
-2. Bake at 325°F for 10-12 minutes until just set
-3. Cool completely, then refrigerate at least 2 hours
+1. I whisked eggs, sugar, juice, and salt in a pyrex bowl.
+2. I cooked this over a bain-marie, until the temperature reached 160 F, whisking constantly but trying not to add too much air into the mixture.
+3. In the meantime I bloomed my gelatin in the lemon juice.
+4. Once the mixture cooled to 140 F, I whisked in the gelatin, as well as the room temperature butter, one tablespoon at a time.
+5. I then used a stick blender to smoothen the mixture, and poured it into the tart ring.
 
 ## What I Can Improve Next Time
 
-**The rolling and chilling of the dough**: 
+**The rolling and chilling of the dough**: I rolled the dough too thin on this tart, and that caused my walls to collapse on one side. I think if I make the dough around 1/2cm thick next time, chill it properly and keep it cold then I can make a much stronger tart shell.
 
-**Use fresh lemon juice**: Bottled juice just doesn't have the same bright flavor
+**Quantites**: Slight personal issue, my tart ring is like 9.5in-10in instead of the recommended 9in. If I continue using this ring I need to adjust my quantities a little bit.
 
-**Low and slow**: Cook the filling gently to avoid scrambling the eggs
+**Texture**: The night I made the tart and tried it, I found the texture to be quite nice and silky smooth. After a day in the fridge though, the gelatin overtook and made the consistancy just slightly too gelatinous. There are two directions I could go to fix this issue.
 
-**Chill thoroughly**: The tart needs time to set properly
+1. *Cook the filling to a slightly lower temperature:* The book said to cook it to 140F, and I chickened and did 160F, wanting the eggs to be fully cooked. However this might have caused too much of the protein structure to change, causing it to be thicker than intended.
+2. *Use less gelatin:* The book recommended 1.5 sheets of gelatin, I used what I found to be the equivalent in powder gelatin, around 1tsp.
 
-## Serving Suggestions
+Maybe next time I will cook the filling to 170F, and then add very little to no gelatin. Perhaps this will be enough to thicken the filling without making it jelly-like.
 
-I like to dust mine with powdered sugar just before serving. Some people prefer it plain to see that glossy surface. Either way, a dollop of whipped cream on the side is never wrong.
+## Final Thoughts
 
-The tart keeps in the fridge for up to 3 days, though it never lasts that long in my house!
-
-## What I Learned
-
-Making this tart taught me patience. You can't rush the filling or the chilling time. But when you slice into that perfect tart and see the smooth filling against the golden crust, you'll understand why French pâtissiers have been making this for centuries.
-
-*Bon appétit!*
+This is a simple tart that is supposed to both look and taste as such. It's a pure celebration of the lemon and citrus. I do feel that it could be paired with some sort of herb to make it a little less pungent. Perhaps a small amount of sage or thyme to cut through the flavor.
