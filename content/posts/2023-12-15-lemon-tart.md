@@ -1,5 +1,5 @@
 ---
-title: FERRANDI Pâtesserie Diaries - Tarte au Citron
+title: FERRANDI Pâtesserie Diaries Part 1 - Tarte au Citron
 date: 2026-03-15T14:11:00.000-04:00
 featuredImage: /images/uploads/img_3841.jpg
 excerpt: "Day 1: Baking my way through the FERRANDI Paris pâtisserie textbook to
