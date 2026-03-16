@@ -68,6 +68,8 @@ Making the dough was simple enough. But I ran into some issues when rolling the 
 
 **Quantites**: Slight personal issue, my tart ring is like 9.5in-10in instead of the recommended 9in. If I continue using this ring I need to adjust my quantities a little bit.
 
+**Bake of the tart shell**: I think 
+
 **Texture**: The night I made the tart and tried it, I found the texture to be quite nice and silky smooth. After a day in the fridge though, the gelatin overtook and made the consistancy just slightly too gelatinous. There are two directions I could go to fix this issue.
 
 1. *Cook the filling to a slightly lower temperature:* The book said to cook it to 140F, and I chickened and did 160F, wanting the eggs to be fully cooked. However this might have caused too much of the protein structure to change, causing it to be thicker than intended.
