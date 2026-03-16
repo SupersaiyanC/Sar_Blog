@@ -33,6 +33,12 @@ The base for the tart is a pâte sucrée, a simple short pastry made with the cr
 * 30g egg
 * pinch of lemon zest (my addition)
 
+### Making the Crust:
+
+1. I creamed the room temperature butter with a whisk, and then added the sugar, eggs, and salt.
+2. After whisking the ingredients together, I added the flour and whisked until just combined.
+3. Once the dough came together I flattened it into a 1/2 inch tall disk, wrapped it in plastic, and chilled it in the fridge for 2 hours.
+
 Making the dough was simple enough. But I ran into some issues when rolling the dough and placing it in the tart mold. I tried out some new rolling pin fasteners, starting with 1/4 inch. This seemed too thin when rolling out the dough, so I tried the 1/8 inch, which was too thin. Depsite this I continued on, had some breakage issues, and prayed that time in the freezer and in the oven would fix my error.
 
 ## The Lemon Curd Filling
@@ -45,12 +51,6 @@ Making the dough was simple enough. But I ran into some issues when rolling the 
 * Pinch of salt
 * 70g unsalted butter, room temperature
 * 1.5 teaspoons gelatin, bloomed in 1 tablespoon of lemon juice
-
-### Making the Crust:
-
-1. I creamed the room temperature butter with a whisk, and then added the sugar, eggs, and salt.
-2. After whisking the ingredients together, I added the flour and whisked until just combined.
-3. Once the dough came together I flattened it into a 1/2 inch tall disk, wrapped it in plastic, and chilled it in the fridge for 2 hours.
 
 ### Making the Filling:
 
