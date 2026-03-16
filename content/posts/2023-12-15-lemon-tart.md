@@ -70,9 +70,9 @@ Making the dough was simple enough. But I ran into some issues when rolling the 
 2. Bake at 325°F for 10-12 minutes until just set
 3. Cool completely, then refrigerate at least 2 hours
 
-## Tips for Success
+## What I Can Improve Next Time
 
-**Don't skip the straining**: This ensures a silky smooth filling with no eggy bits
+**The rolling and chilling of the dough**: 
 
 **Use fresh lemon juice**: Bottled juice just doesn't have the same bright flavor
 
