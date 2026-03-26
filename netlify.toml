@@ -30,3 +30,23 @@
   from = "/admin/*"
   to = "/admin/index.html"
   status = 200
+
+# Security headers applied to every page and asset
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Prevent MIME-type sniffing
+    X-Content-Type-Options = "nosniff"
+    # Prevent framing from other origins (clickjacking protection)
+    X-Frame-Options = "SAMEORIGIN"
+    # Limit referrer info sent to third parties
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    # Disable browser features this site doesn't use
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=()"
+
+# Cache RSS feed for 1 hour so readers don't hammer the server
+[[headers]]
+  for = "/feed.xml"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+    Content-Type = "application/rss+xml; charset=utf-8"

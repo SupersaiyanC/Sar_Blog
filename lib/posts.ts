@@ -3,6 +3,15 @@ import path from 'path';
 import matter from 'gray-matter';
 import { marked } from 'marked';
 
+// Strip raw HTML from Markdown at parse time.
+// Sarita's content should be pure Markdown — this prevents XSS if the CMS
+// account were ever compromised and raw <script> tags injected.
+marked.use({
+  renderer: {
+    html: () => '',
+  },
+});
+
 const postsDirectory = path.join(process.cwd(), 'content/posts');
 
 export interface Post {
@@ -56,7 +65,18 @@ export function getAllPosts(): Post[] {
 }
 
 export async function getPostBySlug(slug: string): Promise<Post & { htmlContent: string }> {
+  // Guard against path traversal — slugs must only contain safe characters
+  if (!/^[a-z0-9-]+$/.test(slug)) {
+    throw new Error(`Invalid post slug: ${slug}`);
+  }
+
   const fullPath = path.join(postsDirectory, `${slug}.md`);
+
+  // Verify the resolved path stays inside postsDirectory
+  if (!path.resolve(fullPath).startsWith(path.resolve(postsDirectory))) {
+    throw new Error(`Slug escapes posts directory: ${slug}`);
+  }
+
   const fileContents = fs.readFileSync(fullPath, 'utf8');
   const { data, content } = matter(fileContents);
   const htmlContent = await marked(content);
