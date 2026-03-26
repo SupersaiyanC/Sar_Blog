@@ -123,6 +123,7 @@ export function getSiteSettings() {
       homeAbout: '',
       aboutPage: '',
       profileImage: '',
+      aboutPageImage: '',
       social: {}
     };
   }
@@ -135,5 +136,6 @@ export function getSiteSettings() {
     homeAbout: parsed.homeAbout ?? parsed.about ?? '',
     aboutPage: parsed.aboutPage ?? parsed.about ?? '',
     profileImage: parsed.profileImage ?? '',
+    aboutPageImage: parsed.aboutPageImage ?? '',
   };
 }

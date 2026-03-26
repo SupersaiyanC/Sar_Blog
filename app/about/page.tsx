@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { getSiteSettings } from '@/lib/posts';
 import { marked } from 'marked';
 
@@ -12,6 +13,18 @@ export default async function About() {
       </h1>
 
       <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
+        {settings.aboutPageImage && (
+          <div className="relative mb-8 h-72 overflow-hidden rounded-2xl md:mb-10 md:h-96">
+            <Image
+              src={settings.aboutPageImage}
+              alt={settings.author ? `${settings.author} on the About page` : 'About page image'}
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+        )}
+
         <div
           className="prose-custom"
           dangerouslySetInnerHTML={{ __html: aboutHtml }}

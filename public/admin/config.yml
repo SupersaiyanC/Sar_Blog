@@ -79,6 +79,13 @@ collections:
               hint: "Long-form content for the full About page"
             }
           - {
+              label: "About Page Image",
+              name: "aboutPageImage",
+              widget: "image",
+              required: false,
+              hint: "Optional image shown at the top of the About page"
+            }
+          - {
               label: "Social Media",
               name: "social",
               widget: "object",
