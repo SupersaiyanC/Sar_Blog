@@ -2,7 +2,11 @@
   "permissions": {
     "allow": [
       "Bash(npm install)",
-      "Bash(npm run dev:*)"
+      "Bash(npm run dev:*)",
+      "Bash(npm run:*)",
+      "Bash(npx next:*)",
+      "Bash(pkill -f \"next build\")",
+      "Bash(pkill -f \"next dev\")"
     ]
   }
 }
