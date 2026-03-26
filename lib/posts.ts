@@ -120,11 +120,20 @@ export function getSiteSettings() {
       title: 'Wanderlust & Whisk',
       description: 'A travel and lifestyle blog',
       author: 'Your Name',
-      about: '',
+      homeAbout: '',
+      aboutPage: '',
+      profileImage: '',
       social: {}
     };
   }
 
   const fileContents = fs.readFileSync(settingsPath, 'utf8');
-  return JSON.parse(fileContents);
+  const parsed = JSON.parse(fileContents);
+
+  return {
+    ...parsed,
+    homeAbout: parsed.homeAbout ?? parsed.about ?? '',
+    aboutPage: parsed.aboutPage ?? parsed.about ?? '',
+    profileImage: parsed.profileImage ?? '',
+  };
 }

@@ -9,6 +9,7 @@ export default function Home() {
   const featuredPosts = getFeaturedPosts();
   const allPosts = getAllPosts();
   const recentPosts = allPosts.slice(0, 6);
+  const homeAbout = settings.homeAbout || settings.aboutPage || '';
 
   return (
     <>
@@ -68,9 +69,9 @@ export default function Home() {
               <h2 className="text-3xl md:text-4xl font-serif text-mist-900 mb-4">
                 Hi, I&apos;m Sarita
               </h2>
-              {settings.about && (
+              {homeAbout && (
                 <p className="text-mist-700 text-lg leading-relaxed mb-6">
-                  {settings.about}
+                  {homeAbout}
                 </p>
               )}
               <Link

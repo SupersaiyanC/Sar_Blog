@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>Flour and Flaneuse</title>
+    <title>Flour and Flâneuse</title>
     <link>https://flourandflaneuse.com</link>
-    <description>A travel and lifestyle blog sharing adventures around the world and delicious recipes from the heart</description>
+    <description>Finding the heart of the world's best destinations and the secrets to the perfect bake, one lesson at a time.</description>
     <language>en-us</language>
     <atom:link href="https://flourandflaneuse.com/feed.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Thu, 26 Mar 2026 04:19:53 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 26 Mar 2026 18:31:11 GMT</lastBuildDate>
     
     <item>
       <title>FERRANDI Pâtesserie Diaries Part 1 - Tarte au Citron</title>
