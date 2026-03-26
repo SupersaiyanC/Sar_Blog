@@ -4,6 +4,7 @@
   "description": "A beautiful travel and lifestyle blog with Decap CMS",
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/generate-rss.js",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

@@ -1,3 +1,43 @@
+# Project Specs — Email Newsletter (Brevo) + RSS Feed
+
+## What this change does and why
+Adds an email newsletter subscription feature so visitors can subscribe to new post notifications. When a new post is published, Brevo's RSS campaign automation picks it up from `/feed.xml` and sends an email to all subscribers automatically. No spam — only new post notifications.
+
+**Service:** Brevo free tier (300 emails/day, unlimited contacts, no credit card)
+**Brevo contact list:** List ID 2
+**RSS feed:** `/feed.xml` (generated at build time)
+**Subscribe endpoint:** `/api/subscribe` → redirects to Netlify Function `netlify/functions/subscribe.js`
+
+## Files added
+- `scripts/generate-rss.js` — generates `public/feed.xml` at build time (runs via `npm run prebuild`)
+- `netlify/functions/subscribe.js` — serverless function that adds emails to Brevo via the API
+- `components/NewsletterSignup.tsx` — client component with two variants: full (homepage) and compact (footer)
+- `.env.local` — Brevo API key and list ID (not committed to git — `.env*.local` is gitignored)
+
+## Files changed
+- `netlify.toml` — added `[functions]` directory, `[dev]` config for local testing, and `/api/subscribe` redirect
+- `app/page.tsx` — added `<NewsletterSignup />` section above the CTA
+- `components/Footer.tsx` — added `<NewsletterSignup compact />` above the copyright line
+- `package.json` — added `"prebuild": "node scripts/generate-rss.js"` so RSS generates before every build
+
+## Local testing (important)
+The subscribe function is a Netlify serverless function, which does NOT run via `npm run dev`. To test the actual email subscription locally:
+1. Install Netlify CLI: `npm install -g netlify-cli`
+2. Link the site: `netlify link` (one-time)
+3. Run: `netlify dev` → opens at **localhost:8888**
+4. The form UI is visible at localhost:3000 (npm run dev) but the subscribe button needs localhost:8888 to actually call the function
+
+## Netlify env vars to add before deploying
+In Netlify dashboard → Site settings → Environment variables, add:
+- `BREVO_API_KEY`
+- `BREVO_LIST_ID`
+
+## Brevo RSS campaign automation (set up in Brevo dashboard, not in code)
+See setup steps in the conversation. The RSS feed URL to use is:
+`https://fastidious-pudding-f14aa7.netlify.app/feed.xml`
+
+---
+
 # Project Specs — Nature-Inspired Color Palette Update
 
 ## What this change does and why

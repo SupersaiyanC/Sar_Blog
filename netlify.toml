@@ -2,6 +2,15 @@
   command = "npm run build"
   publish = "out"
 
+[functions]
+  directory = "netlify/functions"
+
+# Local dev — runs Next.js on 3000, netlify dev proxy on 8888
+[dev]
+  command = "npm run dev"
+  targetPort = 3000
+  port = 8888
+
 # Skip builds on draft branches created by the editorial workflow.
 # This means saving a draft in the CMS will NOT trigger a deploy.
 # Only publishing (merging to main) triggers a production build.
@@ -11,6 +20,11 @@
 # Also skip deploy previews for pull requests (draft PRs from editorial workflow)
 [context.deploy-preview]
   ignore = "exit 1"
+
+[[redirects]]
+  from = "/api/subscribe"
+  to = "/.netlify/functions/subscribe"
+  status = 200
 
 [[redirects]]
   from = "/admin/*"

@@ -1,4 +1,5 @@
 import { getSiteSettings } from '@/lib/posts';
+import NewsletterSignup from '@/components/NewsletterSignup';
 
 export default function Footer() {
   const settings = getSiteSettings();
@@ -82,7 +83,11 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-alpine-sage-700 mt-8 pt-8 text-center text-mist-300 text-sm">
+        <div className="border-t border-alpine-sage-700 mt-8 pt-8">
+          <NewsletterSignup compact />
+        </div>
+
+        <div className="border-t border-alpine-sage-700 mt-6 pt-6 text-center text-mist-300 text-sm">
           <p>© {currentYear} {settings.title}. All rights reserved.</p>
         </div>
       </div>

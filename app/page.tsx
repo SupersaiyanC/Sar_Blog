@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { getAllPosts, getFeaturedPosts, getSiteSettings } from '@/lib/posts';
 import PostCard from '@/components/PostCard';
+import NewsletterSignup from '@/components/NewsletterSignup';
 
 export default function Home() {
   const settings = getSiteSettings();
@@ -108,6 +109,9 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      {/* Newsletter Signup */}
+      <NewsletterSignup />
 
       {/* CTA Section */}
       <section className="bg-sea-salt-400 text-white py-16 md:py-20">
