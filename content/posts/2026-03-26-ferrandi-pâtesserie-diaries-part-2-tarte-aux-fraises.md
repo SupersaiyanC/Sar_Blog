@@ -13,3 +13,11 @@ This time, I tried to take a few more pictures throughout the process of making 
 ## "Basic" Tart Filling
 
 This is just an idea I have been pondering that is slightly humerous that I wanted to share. Upon my completion of this tart, my boyfriend remarked that it was funny that the only thing that made this tart "strawberry" was the fact that their were strawberries on top. He said "so the filling is a basic filling, then it'st just topped with strawberries so it's a strawberry tart?". I was slightly offended by these comments simply due to the fact that he called my almond/pistachio frangipane + crème pâtissière BASIC?? Alas, we determined in the end that he didn't mean "basic" as in simple/easy/boring, he meant that it could be a base for a lot of different fruit tarts (raspberry, cherry, nectarine, mango, etc.)...which I suppose is true (don't tell him I'm admitting that). I guess for the French classics the addition of the fruit is meant to be simple in these tarts. Like the Tarte au Citron, the fruit is celebrated. And how best to celebrate a fruit like a strawberry than in its pure form (especially if its in season!). Anyways just some funny thoughts...but onto the recipe!
+
+## Did I Improve on My Pastry?
+
+The book uses a different, non-offical pastry technique for this tart, and I'm not too sure why. What I mean by non-offical is that they don't direct you to the basic pastry section of the book to get the technique. I hope I can figure out why eventually. It's interesting learning out of a book like this because I can tell that they leave out quite a lot of the really detailed instructions. I find myself using my years of knowledge and intuition a lot more than I do in other cookbooks. In my mind, they expect you to already have some experience.
+
+**Sweet Shortcrust Pastry (Alternate Method) Ingredients**
+
+* **100g flour**
