@@ -16,8 +16,22 @@ This is just an idea I have been pondering that is slightly humerous that I want
 
 ## Did I Improve on My Pastry?
 
-The book uses a different, non-offical pastry technique for this tart, and I'm not too sure why. What I mean by non-offical is that they don't direct you to the basic pastry section of the book to get the technique. I hope I can figure out why eventually. It's interesting learning out of a book like this because I can tell that they leave out quite a lot of the really detailed instructions. I find myself using my years of knowledge and intuition a lot more than I do in other cookbooks. In my mind, they expect you to already have some experience.
+Instead of a pâte sucrée like in the Tarte au Citron, the base for this tart is a pâte sablée. *Sablée* means "sand" in French, and this pastry is named as such because it involves making a sand-like mixture with the dry ingredients and butter before adding in the liquid ingreidnets. Based off some brief research, the pâte sablée is much more crumbly and delicate, vs. the cripsiness of its cousin the pâte sucrée. It would be fun to do some tests to compare the different tart pastries and what each are best for.
 
-**Sweet Shortcrust Pastry (Alternate Method) Ingredients**
+Random thought: It's interesting learning out of a book like this because I can tell that they leave out quite a lot of the really detailed instructions. I find myself using my years of knowledge and intuition a lot more than I do in other cookbooks. In my mind, they expect you to already have some experience.
 
-* **100g flour**
+**Pâte Sablée Ingredients**
+
+* 100g flour
+* 15g almond flour
+* 40g confectioners' sugar (powdered sugar)
+* 1g salt
+* 60g butter, diced
+* 1/2 tsp vanilla
+* 20g beaten egg (1/2 egg ish)
+
+I started out by whisking the flour, almond flour, sugar, and salt together in a bowl (could also be done in a standmixer, I didn't have mine at the time). Then I added the butter (mine was room temp but I think next time it should be cold, my mistake) and mixed it into the other ingredients until it looked like sand. I then added the beaten egg, and mixed until a dough just came together. I then shaped it into a disc around 1/2 inch thick and chilled it for 30 minutes as instructed.
+
+I can't believe I'm writing down another confession but here we are. For those who read Day 1, remember when I said I needed to adjust the recipe to match the volume of my tart ring? I forgot! I was only as I was rolling out this pastry when I realized I had forgotten to make one of the biggest edits I needed to make haha. 
+
+So oh well, the pastry shell was thin again, but this time I rolled the dough between two pieces of parchment paper. It worked pretty well but I had some sticking and breakage occur when I transfered the dough from the parchment ontop of the ring. It was a lot less than last time...I think that once I can roll my dough a bit thicker and keep it even cooler then I will be smooth sailing. My edges were much cleaner this time though! I trimmed the sides with a sharp knife just before I put the ring in the freezer to chill for 10 minutes. I ended up having some collapsing in the end of my tart walls, but I think it was just because it was way too thin. I honestly just might get a smaller tart ring to make my life a bit easier.
