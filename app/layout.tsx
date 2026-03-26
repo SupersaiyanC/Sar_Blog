@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter, Lora } from 'next/font/google';
+import { Inter, Playfair_Display } from 'next/font/google';
 import Script from 'next/script';
 import './globals.css';
 import Header from '@/components/Header';
@@ -12,9 +12,9 @@ const inter = Inter({
   display: 'swap',
 });
 
-const lora = Lora({
+const playfair = Playfair_Display({
   subsets: ['latin'],
-  variable: '--font-lora',
+  variable: '--font-playfair',
   display: 'swap',
 });
 
@@ -37,7 +37,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${lora.variable}`}>
+    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <head>
         {/* Netlify Identity Widget for authentication */}
         <Script

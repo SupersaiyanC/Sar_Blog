@@ -36,7 +36,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-sand-900/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-mist-900/60 to-transparent" />
       </div>
 
       {/* Post Header */}
@@ -45,17 +45,17 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           <div className="mb-6">
             <Link
               href={`/category/${post.category.toLowerCase()}`}
-              className="inline-block px-4 py-2 bg-terracotta-500 text-white text-sm font-medium rounded-full hover:bg-terracotta-600 transition-colors"
+              className="inline-block px-4 py-2 bg-sea-salt-400 text-white text-sm font-medium rounded-full hover:bg-sea-salt-500 transition-colors"
             >
               {post.category}
             </Link>
           </div>
 
-          <h1 className="text-4xl md:text-6xl font-serif text-sand-900 mb-6">
+          <h1 className="text-4xl md:text-6xl font-serif text-mist-900 mb-6">
             {post.title}
           </h1>
 
-          <div className="flex items-center text-sand-600 mb-8 pb-8 border-b border-sand-200">
+          <div className="flex items-center text-mist-700 mb-8 pb-8 border-b border-mist-200">
             <time className="text-lg">{formattedDate}</time>
           </div>
 
@@ -68,19 +68,19 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           {/* Gallery */}
           {post.gallery && post.gallery.length > 0 && (
             <div className="mt-12">
-              <h2 className="text-3xl font-serif text-sand-900 mb-6">Gallery</h2>
+              <h2 className="text-3xl font-serif text-mist-900 mb-6">Gallery</h2>
               <Gallery images={post.gallery} />
             </div>
           )}
 
           {/* Tags */}
           {post.tags && post.tags.length > 0 && (
-            <div className="mt-12 pt-8 border-t border-sand-200">
+            <div className="mt-12 pt-8 border-t border-mist-200">
               <div className="flex flex-wrap gap-2">
                 {post.tags.map((tag, index) => (
                   <span
                     key={index}
-                    className="px-4 py-2 bg-sand-200 text-sand-700 text-sm rounded-full"
+                    className="px-4 py-2 bg-mist-200 text-mist-700 text-sm rounded-full"
                   >
                     #{tag}
                   </span>

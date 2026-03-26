@@ -28,10 +28,10 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
       <div className="text-center mb-12">
-        <h1 className="text-4xl md:text-6xl font-serif text-sand-900 mb-4">
+        <h1 className="text-4xl md:text-6xl font-serif text-mist-900 mb-4">
           {categoryName}
         </h1>
-        <p className="text-xl text-sand-600">
+        <p className="text-xl text-mist-700">
           {categoryPosts.length} {categoryPosts.length === 1 ? 'post' : 'posts'}
         </p>
       </div>
@@ -44,7 +44,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
         </div>
       ) : (
         <div className="text-center py-12">
-          <p className="text-xl text-sand-600">No posts yet in this category.</p>
+          <p className="text-xl text-mist-700">No posts yet in this category.</p>
         </div>
       )}
     </div>

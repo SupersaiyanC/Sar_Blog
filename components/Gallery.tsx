@@ -37,7 +37,7 @@ export default function Gallery({ images }: GalleryProps) {
           onClick={() => setSelectedImage(null)}
         >
           <button
-            className="absolute top-4 right-4 text-white text-4xl hover:text-sand-300 transition-colors"
+            className="absolute top-4 right-4 text-white text-4xl hover:text-mist-300 transition-colors"
             onClick={() => setSelectedImage(null)}
           >
             ×

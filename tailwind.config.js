@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Warm earthy tones
+        // Warm earthy tones (kept for backwards compatibility)
         sand: {
           50: '#fdfbf7',
           100: '#f8f3eb',
@@ -45,10 +45,54 @@ module.exports = {
           800: '#3a4636',
           900: '#2f3a2d',
         },
+        // Warm cream page base
+        cream: '#EEEAE4',
+        // Terracotta hover accent — used only on interactive hover states
+        'terracotta-warm': {
+          DEFAULT: '#C4714A',
+          dark: '#a85c38',
+        },
+        // Nature-inspired palette — mist, sea salt, alpine sage
+        mist: {
+          50: '#f4f6f7',
+          100: '#e8ecee',
+          200: '#d3dce0',
+          300: '#C2CAD0',
+          400: '#a5b3bb',
+          500: '#8799a2',
+          600: '#6a8089',
+          700: '#536670',
+          800: '#3e4e54',
+          900: '#293539',
+        },
+        'sea-salt': {
+          50: '#eef3f5',
+          100: '#d9e5ea',
+          200: '#c0d3db',
+          300: '#97AFB9',
+          400: '#7a98a5',
+          500: '#60838f',
+          600: '#4d6e7b',
+          700: '#3c5764',
+          800: '#2d424c',
+          900: '#1e2e35',
+        },
+        'alpine-sage': {
+          50: '#f1f4f1',
+          100: '#dde4de',
+          200: '#c3cec6',
+          300: '#8A9A8E',
+          400: '#74847a',
+          500: '#5e6f63',
+          600: '#4b594f',
+          700: '#3a463e',
+          800: '#2a342d',
+          900: '#1b221e',
+        },
       },
       fontFamily: {
         sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
-        serif: ['var(--font-lora)', 'Georgia', 'serif'],
+        serif: ['var(--font-playfair)', 'Georgia', 'serif'],
       },
     },
   },

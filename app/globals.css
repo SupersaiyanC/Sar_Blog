@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-sand-50 text-sand-900;
+    @apply bg-cream text-mist-900;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -21,8 +21,8 @@
 
   .prose-custom h1 {
     font-size: 2.25rem;
-    font-family: var(--font-lora), Georgia, serif;
-    color: #5f462d;
+    font-family: var(--font-playfair), Georgia, serif;
+    color: #293539;
     margin-bottom: 1.5rem;
   }
 
@@ -34,8 +34,8 @@
 
   .prose-custom h2 {
     font-size: 1.875rem;
-    font-family: var(--font-lora), Georgia, serif;
-    color: #7d5a39;
+    font-family: var(--font-playfair), Georgia, serif;
+    color: #3e4e54;
     margin-top: 3rem;
     margin-bottom: 1rem;
   }
@@ -48,8 +48,8 @@
 
   .prose-custom h3 {
     font-size: 1.5rem;
-    font-family: var(--font-lora), Georgia, serif;
-    color: #7d5a39;
+    font-family: var(--font-playfair), Georgia, serif;
+    color: #3e4e54;
     margin-top: 2rem;
     margin-bottom: 0.75rem;
   }
@@ -61,39 +61,39 @@
   }
 
   .prose-custom p {
-    color: #9d7047;
+    color: #536670;
     line-height: 1.75;
     margin-bottom: 1.5rem;
   }
 
   .prose-custom a {
-    color: #b95436;
+    color: #4d6e7b;
     text-decoration: underline;
-    text-decoration-color: #e9af94;
+    text-decoration-color: #c0d3db;
     transition: color 0.3s, text-decoration-color 0.3s;
   }
 
   .prose-custom a:hover {
-    color: #9a4330;
-    text-decoration-color: #d16943;
+    color: #C4714A;
+    text-decoration-color: #C4714A;
   }
 
   .prose-custom img {
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
 
   .prose-custom blockquote {
-    border-left: 4px solid #dd8865;
+    border-left: 4px solid #97AFB9;
     padding-left: 1.5rem;
     font-style: italic;
-    color: #b88a5e;
+    color: #7a98a5;
   }
 
   .prose-custom ul, .prose-custom ol {
-    color: #9d7047;
+    color: #536670;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
   }
@@ -104,14 +104,19 @@
   }
 
   .btn-primary {
-    @apply bg-terracotta-500 hover:bg-terracotta-600 text-white px-6 py-3 rounded-full font-medium transition-all duration-300 shadow-md hover:shadow-lg;
+    @apply bg-sea-salt-400 text-white px-8 py-3 rounded-full font-medium transition-all duration-300 shadow-md;
+  }
+
+  .btn-primary:hover {
+    background-color: #C4714A;
+    @apply shadow-lg;
   }
 
   .btn-secondary {
-    @apply bg-sage-500 hover:bg-sage-600 text-white px-6 py-3 rounded-full font-medium transition-all duration-300 shadow-md hover:shadow-lg;
+    @apply bg-alpine-sage-400 hover:bg-alpine-sage-500 text-white px-8 py-3 rounded-full font-medium transition-all duration-300 shadow-md hover:shadow-lg;
   }
 
   .card {
-    @apply bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300;
+    @apply bg-white rounded-3xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300;
   }
 }
