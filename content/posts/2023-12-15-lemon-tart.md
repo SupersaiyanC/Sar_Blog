@@ -1,5 +1,5 @@
 ---
-title: FERRANDI Pâtesserie Diaries Part 1 | Tarte au Citron
+title: FERRANDI Pâtisserie Diaries Part 1 | Tarte au Citron
 date: 2026-03-15T14:11:00.000-04:00
 featuredImage: /images/uploads/img_3841.jpg
 excerpt: "Day 1: Baking my way through the FERRANDI Paris pâtisserie textbook to
@@ -12,7 +12,7 @@ tags:
   - tart
   - desserts
 ---
-Ok, this is the first of what I hope is many posts. I've been toying with the idea of becoming a pastry chef recently. Well, recently is a lie, it's something I have been dreaming off my whole life. For the past 10 years, I've spent a lot of time baking: croissants, macarons, cakes, pastries, and everything inbetween. For Christmas in 8th grade, I asked for and recieved the FERRANDI Paris: French Pâtesserie cookbook. The book is more of a textbook on the fundamentals of french pâtesserie, and has recipies organized in three levels of difficulty. 
+Ok, this is the first of what I hope is many posts. I've been toying with the idea of becoming a pastry chef recently. Well, recently is a lie, it's something I have been dreaming off my whole life. For the past 10 years, I've spent a lot of time baking: croissants, macarons, cakes, pastries, and everything inbetween. For Christmas in 8th grade, I asked for and recieved the FERRANDI Paris: French Pâtisserie cookbook. The book is more of a textbook on the fundamentals of french pâtisserie, and has recipies organized in three levels of difficulty. 
 
 I think before I take the jump and enroll in pastry school, I want a taste of what this book has to offer. I plan to bake through as much of the book as possible, *Julie and Julia* style. I will start with all of the level one recipes, then move onto level two, then three. Believe me, I'm not expecting to be a professional pastry chef by the end of this, but I hope to hone in and build upon some skills, and more importantly, eat and share some delicious creations. I will document each recipe here along with the ingredients and my method, as well as my mistakes. I don't intend these recipes to be followed by others necessarily, but rather am focused on documenting my journey.
 
