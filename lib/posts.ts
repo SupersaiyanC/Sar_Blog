@@ -14,6 +14,20 @@ marked.use({
 
 const postsDirectory = path.join(process.cwd(), 'content/posts');
 
+// Normalize a filename into a URL-safe ASCII slug.
+// Strips diacritics (â → a, é → e) so accented filenames from the CMS still
+// produce valid, linkable URLs.
+function normalizeSlug(fileName: string): string {
+  return fileName
+    .replace(/\.md$/, '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '') // strip combining diacritical marks
+    .toLowerCase()
+    .replace(/[^a-z0-9-]/g, '-')    // replace remaining non-ASCII with hyphens
+    .replace(/-+/g, '-')             // collapse consecutive hyphens
+    .replace(/^-|-$/g, '');          // trim leading/trailing hyphens
+}
+
 export interface Post {
   slug: string;
   title: string;
@@ -36,7 +50,7 @@ export function getAllPosts(): Post[] {
   const allPostsData = fileNames
     .filter((fileName) => fileName.endsWith('.md'))
     .map((fileName) => {
-      const slug = fileName.replace(/\.md$/, '');
+      const slug = normalizeSlug(fileName);
       const fullPath = path.join(postsDirectory, fileName);
       const fileContents = fs.readFileSync(fullPath, 'utf8');
       const { data, content } = matter(fileContents);
@@ -70,7 +84,17 @@ export async function getPostBySlug(slug: string): Promise<Post & { htmlContent:
     throw new Error(`Invalid post slug: ${slug}`);
   }
 
-  const fullPath = path.join(postsDirectory, `${slug}.md`);
+  // Find the actual file whose normalized slug matches — handles accented filenames from the CMS
+  const fileNames = fs.readdirSync(postsDirectory);
+  const matchingFile = fileNames.find(
+    (fileName) => fileName.endsWith('.md') && normalizeSlug(fileName) === slug
+  );
+
+  if (!matchingFile) {
+    throw new Error(`Post not found: ${slug}`);
+  }
+
+  const fullPath = path.join(postsDirectory, matchingFile);
 
   // Verify the resolved path stays inside postsDirectory
   if (!path.resolve(fullPath).startsWith(path.resolve(postsDirectory))) {

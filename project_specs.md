@@ -140,6 +140,21 @@ Also update Tailwind `@apply` references:
 
 ---
 
+## Accented Slug Fix (2026-03-26)
+
+### Summary
+
+Fixes a build-breaking bug where posts with accented characters in their title (e.g. "Pâtisserie") generated filenames with non-ASCII characters. The `getPostBySlug()` validation regex only allowed `[a-z0-9-]`, causing it to throw on those slugs and crash the entire Netlify build.
+
+**Affected post:** `2026-03-26-ferrandi-pâtesserie-diaries-part-2-tarte-aux-fraises.md`
+
+### Code changes
+
+- `lib/posts.ts` — Added `normalizeSlug()` helper (strips diacritics via Unicode NFD normalization). `getAllPosts()` now uses normalized slugs; `getPostBySlug()` now scans the directory to find the file whose normalized slug matches, instead of assuming `${slug}.md` is the filename.
+- `public/admin/config.yml` — Added `slug: encoding: "ascii" / clean_accents: true` to prevent the CMS from generating accented filenames going forward.
+
+---
+
 ## What will NOT change
 - Layout, spacing, typography, fonts
 - Component structure or HTML
