@@ -26,9 +26,17 @@ export default function Home() {
               priority
             />
           </div>
-          <h1 className="text-5xl md:text-7xl font-serif text-mist-900 mb-6">
-            {settings.title}
-          </h1>
+          <div className="mb-6 flex justify-center">
+            <h1 className="sr-only">{settings.title}</h1>
+            <Image
+              src="/logo.png"
+              alt="Flour & Flaneuse logo"
+              width={918}
+              height={167}
+              className="h-auto w-full max-w-xs object-contain md:max-w-2xl"
+              priority
+            />
+          </div>
           <p className="text-xl md:text-2xl text-mist-700 max-w-3xl mx-auto leading-relaxed">
             {settings.description}
           </p>

@@ -91,7 +91,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
+        sans: ['Georgia', 'Times New Roman', 'serif'],
         serif: ['var(--font-playfair)', 'Georgia', 'serif'],
       },
     },

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { getSiteSettings } from '@/lib/posts';
 import NewsletterSignup from '@/components/NewsletterSignup';
 
@@ -20,24 +21,24 @@ export default function Footer() {
             <h4 className="text-lg font-serif mb-4">Quick Links</h4>
             <ul className="space-y-2 text-mist-200">
               <li>
-                <a href="/" className="hover:text-sea-salt-300 transition-colors">
+                <Link href="/" className="hover:text-sea-salt-300 transition-colors">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/category/travel" className="hover:text-sea-salt-300 transition-colors">
+                <Link href="/category/travel" className="hover:text-sea-salt-300 transition-colors">
                   Travel
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/category/baking" className="hover:text-sea-salt-300 transition-colors">
+                <Link href="/category/baking" className="hover:text-sea-salt-300 transition-colors">
                   Baking
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/about" className="hover:text-sea-salt-300 transition-colors">
+                <Link href="/about" className="hover:text-sea-salt-300 transition-colors">
                   About
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
