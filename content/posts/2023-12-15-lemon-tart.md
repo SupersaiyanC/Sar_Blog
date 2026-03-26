@@ -81,4 +81,4 @@ Maybe next time I will cook the filling to 170F, and then add very little to no 
 
 ## Final Thoughts
 
-This is a simple tart that is supposed to both look and taste as such. It's a pure celebration of the lemon and citrus. I do feel that it could be paired with some sort of herb to make it a little less pungent though...perhaps a small amount of sage or thyme to cut through the flavor. Or some cardamom.
+This is a simple tart that is supposed to both look and taste as such. It's a pure celebration of the lemon and citrus. I do feel that it could be paired with some sort of herb to make it a little less pungent though...perhaps a small amount of sage or thyme to cut through the flavor. Or some cardamom (I'll probably always say that). I also fell IN LOVE with the affogatos I had in Italy. They always had a little pinch of lemon zest which just makes them soooo good. Perhaps I can make a coffee/lemon inspired tart in future?
