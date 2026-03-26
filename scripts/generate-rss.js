@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const matter = require('gray-matter');
 
-const SITE_URL = 'https://fastidious-pudding-f14aa7.netlify.app';
+const SITE_URL = 'https://flourandflaneuse.com';
 const postsDir = path.join(process.cwd(), 'content/posts');
 const settingsPath = path.join(process.cwd(), 'content/settings/general.json');
 const outputPath = path.join(process.cwd(), 'public/feed.xml');

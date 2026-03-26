@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Flour and Flaneuse</title>
+    <link>https://flourandflaneuse.com</link>
+    <description>A travel and lifestyle blog sharing adventures around the world and delicious recipes from the heart</description>
+    <language>en-us</language>
+    <atom:link href="https://flourandflaneuse.com/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Mar 2026 04:04:56 GMT</lastBuildDate>
+    
+    <item>
+      <title>FERRANDI Pâtesserie Diaries Part 1 - Tarte au Citron</title>
+      <link>https://flourandflaneuse.com/posts/2023-12-15-lemon-tart/</link>
+      <description>Day 1: Baking my way through the FERRANDI Paris pâtisserie textbook to maybe become a pastry chef?</description>
+      <pubDate>Sun, 15 Mar 2026 18:11:00 GMT</pubDate>
+      <guid isPermaLink="true">https://flourandflaneuse.com/posts/2023-12-15-lemon-tart/</guid>
+      <enclosure url="https://flourandflaneuse.com/images/uploads/img_3841.jpg" type="image/jpeg" length="0" />
+      <category>Baking</category>
+    </item>
+    <item>
+      <title>A WWOOFing Experience - Finding the Heart of Italy</title>
+      <link>https://flourandflaneuse.com/posts/2026-03-14-a-wwoofing-experience-finding-the-heart-of-italy/</link>
+      <description>Italy is renowned for its ancient worlds, sizzling summers, and lush Tuscan hills, but I discovered its beauty in a place quite far away from the hustle and bustle of its tourist cities. </description>
+      <pubDate>Sat, 14 Mar 2026 21:40:00 GMT</pubDate>
+      <guid isPermaLink="true">https://flourandflaneuse.com/posts/2026-03-14-a-wwoofing-experience-finding-the-heart-of-italy/</guid>
+      <enclosure url="https://flourandflaneuse.com/images/uploads/img_3604-1-1-.jpg" type="image/jpeg" length="0" />
+      <category>Travel</category>
+    </item>
+  </channel>
+</rss>

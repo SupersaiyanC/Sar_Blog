@@ -3,8 +3,8 @@
 ## Project Overview
 A travel and lifestyle blog built for Sarita. She is a non-technical user who manages all content through the CMS admin panel. The site is owned and maintained by Rayaan.
 
-**Live site:** https://fastidious-pudding-f14aa7.netlify.app  
-**Admin panel:** https://fastidious-pudding-f14aa7.netlify.app/admin  
+**Live site:** https://flourandflaneuse.com
+**Admin panel:** https://flourandflaneuse.com/admin
 **GitHub repo:** https://github.com/SupersaiyanC/Sar_Blog
 
 ---

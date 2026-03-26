@@ -34,7 +34,7 @@ In Netlify dashboard → Site settings → Environment variables, add:
 
 ## Brevo RSS campaign automation (set up in Brevo dashboard, not in code)
 See setup steps in the conversation. The RSS feed URL to use is:
-`https://fastidious-pudding-f14aa7.netlify.app/feed.xml`
+`https://flourandflaneuse.com/feed.xml`
 
 ---
 
