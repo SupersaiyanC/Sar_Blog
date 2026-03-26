@@ -19,9 +19,9 @@ export default function Home() {
             <Image
               src="/emblem.png"
               alt="Flour & Flâneuse emblem"
-              width={80}
-              height={80}
-              className="h-16 w-auto object-contain md:h-20"
+              width={160}
+              height={160}
+              className="h-32 w-auto object-contain md:h-40"
               priority
             />
           </div>
