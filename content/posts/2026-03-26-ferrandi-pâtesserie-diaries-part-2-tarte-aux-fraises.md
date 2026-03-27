@@ -2,7 +2,8 @@
 title: FERRANDI Pâtisserie Diaries Part 2 | Tarte aux Fraises
 date: 2026-03-26T13:11:00.000-04:00
 featuredImage: /images/uploads/img_3998.jpeg
-excerpt: "Day 2: Second attempt at a FERRANDI recipe, read to see how I did!"
+excerpt: "Day 2: Time for another FERRANDI recipe, read to see how I did! Do you
+  think it's ready for a pâtisserie window in France?"
 category: Baking
 featured: false
 ---
