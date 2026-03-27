@@ -34,4 +34,18 @@ For the Dough
 * 120ml milk (can be 2% or whole milk)
 * 1 egg (room temperature)
 * 60g salted butter (room temperature)
-* 1tbs butter (room temperature) for lining the pan
+* 1tbs butter (room temperature) for lining the pan 
+
+To make the tangzhong, I combined the listed ingredients in a small saucepan and whisked until combined. I cooked the mixture over medium heat for around 3 minutes, whisking gently but constantly until it thickened into a thick pudding-like mixture.
+
+![](/images/uploads/img_3906.jpeg)
+
+I then combined the flour, jaggery, yeast, and salt in the bowl of a standmixer, mixing for 10 seconds until they were combined. I then added the milk (I realized I forgot to heat this like *Kimchimari*'s recipe said to, but it still worked out ok for me), egg, and cooled tangzhong. I kneaded this mixer on low for around 5-6 minutes.
+
+![](/images/uploads/img_3908.jpeg)
+
+I then added the softened butter to the dough around 1 tablespoon at a time. I turned the mixer up to medium and kneaded it for an additional 10 minutes. The resulting dough was really soft and pliable. I placed it under a tea towel and let it rest for around 70 minutes.
+
+![](/images/uploads/img_3909.jpeg)
+
+![](/images/uploads/img_3912.jpeg)
