@@ -18,13 +18,24 @@ function escapeXml(str) {
     .replace(/"/g, '&quot;');
 }
 
+function normalizeSlug(fileName) {
+  return fileName
+    .replace(/\.md$/, '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '') // strip combining diacritical marks
+    .toLowerCase()
+    .replace(/[^a-z0-9-]/g, '-')    // replace remaining non-ASCII with hyphens
+    .replace(/-+/g, '-')             // collapse consecutive hyphens
+    .replace(/^-|-$/g, '');          // trim leading/trailing hyphens
+}
+
 function getAllPosts() {
   if (!fs.existsSync(postsDir)) return [];
   return fs
     .readdirSync(postsDir)
     .filter((f) => f.endsWith('.md'))
     .map((fileName) => {
-      const slug = fileName.replace(/\.md$/, '');
+      const slug = normalizeSlug(fileName);
       const { data } = matter(fs.readFileSync(path.join(postsDir, fileName), 'utf8'));
       return { slug, ...data };
     })

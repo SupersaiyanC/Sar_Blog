@@ -13,7 +13,9 @@
       "Bash(find . -type f -name .env*)",
       "Bash(git diff:*)",
       "Bash(npm audit:*)",
-      "Bash(git log:*)"
+      "Bash(git log:*)",
+      "Bash(git pull:*)",
+      "Bash(grep -E '^[a-z0-9-]+$')"
     ]
   }
 }
