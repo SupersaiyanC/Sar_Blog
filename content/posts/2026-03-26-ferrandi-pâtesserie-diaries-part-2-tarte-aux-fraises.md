@@ -28,23 +28,23 @@ Random thought: It's interesting learning out of a book like this because I can 
 
 I started out by whisking the flour, almond flour, sugar, and salt together in a bowl (could also be done in a standmixer, I didn't have mine at the time). Then I added the butter (mine was room temp but I think next time it should be cold, my mistake) and mixed it into the other ingredients until it looked like sand. I then added the beaten egg, and mixed until a dough just came together. I then shaped it into a disc around 1/2 inch thick and chilled it for 30 minutes as instructed.
 
-I can't believe I'm writing down another confession but here we are. For those who read Day 1, remember when I said I needed to adjust the recipe to match the volume of my tart ring? I forgot! I was only as I was rolling out this pastry when I realized I had forgotten to make one of the biggest edits I needed to make haha. 
+I can't believe I'm writing down another confession but here we are. For those who read Day 1, remember when I said I needed to adjust the recipe to match the volume of my tart ring? I forgot! It was only as I was rolling out this pastry when I realized I had forgotten to make one of the biggest edits I needed to make haha. 
 
 So oh well, the pastry shell was thin again, but this time I rolled the dough between two pieces of parchment paper. It worked pretty well but I had some sticking and breakage occur when I transfered the dough from the parchment ontop of the ring. It was a lot less than last time...I think that once I can roll my dough a bit thicker and keep it even cooler then I will be smooth sailing. My edges were much cleaner this time though! I trimmed the sides with a sharp knife just before I put the ring in the freezer to chill for 10 minutes. I ended up having some collapsing in the end of my tart walls, but I think it was just because it was way too thin. I honestly just might get a smaller tart ring to make my life a bit easier.
 
 ## "Basic" Tart Filling
 
-This is just an idea I have been pondering that is slightly humerous that I wanted to share. Upon my completion of this tart, my boyfriend remarked that it was funny that the only thing that made this tart "strawberry" was the fact that their were strawberries on top. He said "so the filling is a basic filling, then it'st just topped with strawberries so it's a strawberry tart?". I was slightly offended by these comments simply due to the fact that he called my almond/pistachio frangipane + crème pâtissière BASIC?? Alas, we determined in the end that he didn't mean "basic" as in simple/easy/boring, he meant that it could be a base for a lot of different fruit tarts (raspberry, cherry, nectarine, mango, etc.)...which I suppose is true (don't tell him I'm admitting that). I guess for the French classics the addition of the fruit is meant to be simple in these tarts. Like the Tarte au Citron, the fruit is celebrated. And how best to celebrate a fruit like a strawberry than in its pure form (especially if its in season!).
+This is just an idea I have been pondering that is slightly humerous that I wanted to share. Upon my completion of this tart, my boyfriend remarked that it was funny that the only thing that made this tart "strawberry" was the fact that their were strawberries on top. He said "so the filling is a basic filling, then it's just topped with strawberries so it's a strawberry tart?". I was slightly offended by these comments simply due to the fact that he called my almond/pistachio frangipane + crème pâtissière BASIC?? Alas, we determined in the end that he didn't mean "basic" as in simple/easy/boring, he meant that it could be a base for a lot of different fruit tarts (raspberry, cherry, nectarine, mango, etc.)...which I suppose is true (don't tell him I'm admitting that). I guess for the French classics the addition of the fruit is meant to be simple in these tarts. Like the Tarte au Citron, the fruit is celebrated. And how best to celebrate a fruit like a strawberry than in its pure form (especially if its in season!).
 
 **Almond-Pistachio Frangipane Ingredients:**
 
-* **60g butter diced, at room temperature**
-* **60g sugar**
-* **60g almond flour**
-* **25g pistachio paste**
-* **50g beaten egg**
+* 60g butter diced, at room temperature
+* 60g sugar
+* 60g almond flour
+* 25g pistachio paste
+* 50g beaten egg
 
-After placing the tart ring in the freezer, I preheated the oven to 325 F and got started on the frangipane. I beat the butter in a bowl until creamy and then added the sugar, almond flour, egg, and pistachio paste (I used pistachio cream from Costco, hopefully same idea). I beat the mixture until smooth with a spatula until it was smooth. Frangipane is sooo satisfying when it comes together. My go-to summer party tart is an almond frangipane nectarine and raspberry  tart, its so simple yet so good. Recipe to come for sure.
+After placing the tart ring in the freezer, I preheated the oven to 325 F and got started on the frangipane. I beat the butter in a bowl until creamy and then added the sugar, almond flour, egg, and pistachio paste (I used pistachio cream from Costco, hopefully same idea). I beat the mixture with a spatula until it was smooth. Frangipane is sooo satisfying when it comes together. My go-to summer party tart is an almond frangipane nectarine and raspberry  tart, its so simple yet so good. Recipe to come for sure.
 
 ![](/images/uploads/img_0440.jpeg)
 
@@ -54,17 +54,17 @@ I added the frangipane to the chilled ring, smooted it out, and placed it in the
 
 **Crème Pâtissière Ingredients:**
 
-* **125ml milk**
-* **25g sugar**
-* **25g egg yolk**
-* **12g cornstarch**
-* **20g butter**
+* 125ml milk
+* 25g sugar
+* 25g egg yolk
+* 12g cornstarch
+* 20g butter
 
 To make the crème pâtissière, I first heated the milk with 1/2 the sugar until it was just under boiling. In the meantime I whisked the rest of the sugar with the egg yolk, followed by the cornstarch.
 
 The part where you have to be the most careful with crème pâtissière is adding in the hot milk into the raw eggs. You must constantly whisk to avoid any scrambling of the eggs. Once you've added all the milk, you transfer the mixture back into the milk pot and heat it over the stove until boiling. You must again whisk constantly here to avoid any burning of the mixture. Because of the cornstarch it will thicken quite quickly. My crème pâtissière ended with a pudding-like constistancy. I cooked it for 2 ish minutes after boiling occured.
 
-To assemble the tart, I smoothed the crème pâtissière over the baked frangipane filling, and topped it with circles of halved strawberries, follwed by a sprinkling of chopped pistachios. Overall, it looked pretty similar to the one in the book, except I think they use more uniform strawberries haha. It also could have looked a bit better with the strawberry jelly glaze but who is really too concerned about that!
+To assemble the tart, I smoothed the crème pâtissière over the baked frangipane filling, and topped it with circles of halved strawberries, followed by a sprinkling of chopped pistachios. Overall, it looked pretty similar to the one in the book, except I think they use more uniform strawberries haha. It also could have looked a bit better with the strawberry jelly glaze but who is really too concerned about that!
 
 ## What I Can Improve Next Time
 
