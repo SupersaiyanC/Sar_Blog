@@ -40,12 +40,20 @@ To make the tangzhong, I combined the listed ingredients in a small saucepan and
 
 ![](/images/uploads/img_3906.jpeg)
 
-I then combined the flour, jaggery, yeast, and salt in the bowl of a standmixer, mixing for 10 seconds until they were combined. I then added the milk (I realized I forgot to heat this like *Kimchimari*'s recipe said to, but it still worked out ok for me), egg, and cooled tangzhong. I kneaded this mixer on low for around 5-6 minutes.
+I then combined the flour, jaggery, and salt in the bowl of a standmixer, mixing for 10 seconds until they were combined. I then added the milk (I heated this up with the yeast on the stove ahead of time until warm), egg, and cooled tangzhong. I kneaded this mixer on low for around 5-6 minutes.
 
 ![](/images/uploads/img_3908.jpeg)
 
-I then added the softened butter to the dough around 1 tablespoon at a time. I turned the mixer up to medium and kneaded it for an additional 10 minutes. The resulting dough was really soft and pliable. I placed it under a tea towel and let it rest for around 70 minutes.
+I added the softened butter to the dough around 1 tablespoon at a time. I turned the mixer up to medium and kneaded it for an additional 10 minutes. The resulting dough was really soft and pliable. I placed it under a tea towel and let it rest for around 70 minutes.
 
 ![](/images/uploads/img_3909.jpeg)
 
+The kitty cat was lovinggg the smell of the dough.
+
 ![](/images/uploads/img_3912.jpeg)
+
+After 70 or so minutes, the dough had doubled in size. I shaped it per *Kimchimari*'s instructions, then let it rise in the pan for another 30-40 minutes. I brushed the top with milk then baked it at 350 F for around 35 minutes. The top did get a little charred because the top of the bread almost touched the top of the toaster oven I was using, but oh well...more flavor!
+
+We all LOVED the bread so much. I couldn't even get a photo of it in the daylight before my niece had stolen a slice! But I don't mind. The color was a pretty light golden and the texture was so good. I was researching and apparently jaggery is a natural humectant, which means that it attracts and holds moisture, which keeps bread softer for longer. So there's another added bonus!
+
+![](/images/uploads/img_3927-1-.jpeg)
