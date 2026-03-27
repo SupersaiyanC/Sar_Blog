@@ -1,7 +1,7 @@
 ---
 title: Shokupan (Milk Bread) with a Small Twist
 date: 2026-03-26T18:00:00.000-04:00
-featuredImage: /images/uploads/img_3929.jpeg
+featuredImage: /images/uploads/adobe-express-file-1-.jpg
 excerpt: The day I accidently made my niece addicted to milk bread! This bread
   is traditional with a little twist from a part of my heritage.
 category: Baking
