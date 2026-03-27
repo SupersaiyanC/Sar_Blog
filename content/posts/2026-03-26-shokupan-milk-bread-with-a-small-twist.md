@@ -17,4 +17,21 @@ Anyways I got all my ingredients together to make the milk bread when I realized
 
 Jaggery is a type of unrefined sugar mainly used in India and Southeast Asia. It is derived from  either sugarcane or palm sap, and has a beautiful deep golden color and caramel-ish flavor. My brother's household has a lot of Indian influence, mainly due to his wife, but also due to our family's heritage, 25% being Indian. I decided to take the gamble and use the jaggary in this recipe, and the results were wonderful.
 
-**Milk Bread Ingredients**
+**Milk Bread Ingredients:**
+
+For the Tangzhong
+
+* 22g bread flour
+* 60ml water
+* 60ml milk (can be 2% or whole milk)
+
+For the Dough
+
+* 330g bread flour
+* 7g instant yeast
+* 1tsp salt
+* 50g jaggery powder
+* 120ml milk (can be 2% or whole milk)
+* 1 egg (room temperature)
+* 60g salted butter (room temperature)
+* 1tbs butter (room temperature) for lining the pan
