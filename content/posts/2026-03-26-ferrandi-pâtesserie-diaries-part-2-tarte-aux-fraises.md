@@ -5,7 +5,7 @@ featuredImage: /images/uploads/img_3998.jpeg
 excerpt: "Day 2: Time for another FERRANDI recipe, read to see how I did! Do you
   think it's ready for a pâtisserie window in France?"
 category: Baking
-featured: false
+featured: true
 ---
 From what I ate when I was in France last year, the traditional tarte aux fraises (strawberries) and tarte aux framboises (raspberries, my Mum's personal favorite pâtisserie) generally have the same structure (please correct me if I am wrong!), including a tart pastry shell, crème pâtissière, fresh fruit on top, and maybe a glaze of thinned jam. The FERRANDI book elevates this idea a little bit in their Level 1 tarte aux fraises recipe, adding an almond/pistachio frangipane underneath the crème pâtissière.
 
