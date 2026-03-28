@@ -15,7 +15,9 @@
       "Bash(npm audit:*)",
       "Bash(git log:*)",
       "Bash(git pull:*)",
-      "Bash(grep -E '^[a-z0-9-]+$')"
+      "Bash(grep -E '^[a-z0-9-]+$')",
+      "Bash(git fetch:*)",
+      "Bash(git stash:*)"
     ]
   }
 }
