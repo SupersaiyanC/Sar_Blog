@@ -155,7 +155,38 @@ Fixes a build-breaking bug where posts with accented characters in their title (
 
 ---
 
+## Local Newsletter Sending Tool (2026-03-28)
+
+### Summary
+
+A standalone `newsletter-tool.html` file (open directly in any browser, no server needed) for manually sending newsletter emails via Brevo. Fetches posts from the live RSS feed, renders a full email preview, and fires to a Brevo list via the campaigns API.
+
+### How it works
+
+1. On load, fetches `https://flourandflaneuse.com/feed.xml` via a CORS proxy (allorigins.win) and lists all posts in the sidebar.
+2. Clicking a post renders a full email preview (in an isolated iframe) matching the blog aesthetic — cream background, emblem, Playfair Display headings, terracotta CTA button.
+3. The subject line is pre-filled and editable.
+4. "Send to List" → confirmation dialog → `POST /v3/emailCampaigns` → `POST /v3/emailCampaigns/{id}/sendNow`.
+
+### Settings (saved in browser localStorage)
+
+- `BREVO_API_KEY` — paste from Brevo dashboard → Account → API Keys
+- `BREVO_LIST_ID` — 2 (from existing newsletter setup)
+- Sender name / sender email (must be a verified sender in Brevo)
+
+### File
+
+- `newsletter-tool.html` — root of repo (not deployed; gitignored if desired)
+
+### Notes
+
+- The unsubscribe link is injected by Brevo via the `{unsubscribeLink}` variable in the campaign HTML (Brevo's single-brace syntax, not Mustache triple-braces).
+- The tool does NOT use Node or any build step — just double-click the file.
+
+---
+
 ## What will NOT change
+
 - Layout, spacing, typography, fonts
 - Component structure or HTML
 - CMS configuration or content files

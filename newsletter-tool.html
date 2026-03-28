@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flour &amp; Flâneuse — Newsletter Tool</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream:          #EEEAE4;
+      --cream-card:     #FAF8F5;
+      --cream-hover:    #E6E2DB;
+      --mist-900:       #293539;
+      --mist-800:       #3e4e54;
+      --mist-700:       #536670;
+      --mist-600:       #6a8089;
+      --mist-500:       #8799a2;
+      --mist-400:       #a5b3bb;
+      --mist-300:       #C2CAD0;
+      --mist-200:       #d3dce0;
+      --mist-100:       #e8ecee;
+      --sea-600:        #4d6e7b;
+      --sea-400:        #7a98a5;
+      --sea-300:        #97AFB9;
+      --sea-200:        #c0d3db;
+      --terracotta:     #C4714A;
+      --terracotta-dk:  #a85c38;
+      --white:          #ffffff;
+      --error-bg:       #7d3a2d;
+    }
+
+    body {
+      font-family: 'Inter', Georgia, sans-serif;
+      background: var(--cream);
+      color: var(--mist-900);
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Header ─────────────────────────────────────────────── */
+    .header {
+      background: var(--white);
+      border-bottom: 1px solid var(--mist-200);
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      gap: 16px;
+    }
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .header-emblem {
+      width: 34px;
+      height: 34px;
+      object-fit: contain;
+    }
+    .header-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--mist-900);
+      line-height: 1.2;
+    }
+    .header-sub {
+      font-size: 11px;
+      color: var(--mist-500);
+      letter-spacing: 0.03em;
+    }
+    .btn-settings {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--cream);
+      border: 1px solid var(--mist-200);
+      border-radius: 8px;
+      padding: 8px 14px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--mist-700);
+      cursor: pointer;
+      transition: background 0.15s, border-color 0.15s;
+      font-family: inherit;
+      flex-shrink: 0;
+    }
+    .btn-settings:hover {
+      background: var(--cream-hover);
+      border-color: var(--mist-300);
+    }
+    .settings-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--terracotta);
+      flex-shrink: 0;
+    }
+
+    /* ── Settings modal ─────────────────────────────────────── */
+    .overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(41, 53, 57, 0.45);
+      z-index: 200;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .overlay.open { display: flex; }
+    .modal {
+      background: var(--white);
+      border-radius: 18px;
+      padding: 36px;
+      width: 480px;
+      max-width: 100%;
+      box-shadow: 0 24px 72px rgba(41, 53, 57, 0.22);
+    }
+    .modal-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--mist-900);
+      margin-bottom: 6px;
+    }
+    .modal-desc {
+      font-size: 13px;
+      color: var(--mist-600);
+      line-height: 1.65;
+      margin-bottom: 28px;
+    }
+    .form-group { margin-bottom: 18px; }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .form-label {
+      display: block;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: var(--mist-700);
+      margin-bottom: 6px;
+    }
+    .form-input {
+      width: 100%;
+      border: 1px solid var(--mist-200);
+      border-radius: 8px;
+      padding: 10px 13px;
+      font-size: 14px;
+      color: var(--mist-900);
+      background: var(--cream);
+      font-family: inherit;
+      outline: none;
+      transition: border-color 0.15s, background 0.15s;
+    }
+    .form-input:focus {
+      border-color: var(--sea-400);
+      background: var(--white);
+    }
+    .modal-actions {
+      display: flex;
+      gap: 10px;
+      margin-top: 28px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 10px 22px;
+      border-radius: 100px;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      border: none;
+      transition: background 0.15s, opacity 0.15s;
+      font-family: inherit;
+    }
+    .btn-save {
+      background: var(--sea-600);
+      color: var(--white);
+      flex: 1;
+    }
+    .btn-save:hover { background: var(--mist-800); }
+    .btn-cancel {
+      background: var(--cream);
+      color: var(--mist-700);
+      border: 1px solid var(--mist-200);
+    }
+    .btn-cancel:hover { background: var(--cream-hover); }
+
+    /* ── Confirm modal ──────────────────────────────────────── */
+    .confirm-modal {
+      background: var(--white);
+      border-radius: 18px;
+      padding: 36px;
+      width: 440px;
+      max-width: 100%;
+      box-shadow: 0 24px 72px rgba(41, 53, 57, 0.22);
+      text-align: center;
+    }
+    .confirm-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: #fdf0eb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+    }
+    .confirm-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--mist-900);
+      margin-bottom: 10px;
+    }
+    .confirm-body {
+      font-size: 14px;
+      color: var(--mist-600);
+      line-height: 1.65;
+      margin-bottom: 28px;
+    }
+    .confirm-post-title {
+      font-weight: 600;
+      color: var(--mist-800);
+    }
+    .confirm-actions {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+    }
+    .btn-send-confirm {
+      background: var(--terracotta);
+      color: var(--white);
+      padding: 12px 28px;
+      border-radius: 100px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      font-family: inherit;
+      transition: background 0.15s;
+    }
+    .btn-send-confirm:hover { background: var(--terracotta-dk); }
+
+    /* ── Main layout ─────────────────────────────────────────── */
+    .main {
+      display: grid;
+      grid-template-columns: 308px 1fr;
+      height: calc(100vh - 63px);
+    }
+
+    /* ── Sidebar ─────────────────────────────────────────────── */
+    .sidebar {
+      background: var(--white);
+      border-right: 1px solid var(--mist-200);
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    .sidebar-head {
+      padding: 18px 20px 14px;
+      border-bottom: 1px solid var(--mist-100);
+      position: sticky;
+      top: 0;
+      background: var(--white);
+      z-index: 10;
+    }
+    .sidebar-label {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--mist-500);
+    }
+    .loading-wrap {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 24px;
+      color: var(--mist-600);
+      font-size: 13px;
+      gap: 12px;
+    }
+    .spinner {
+      width: 22px;
+      height: 22px;
+      border: 2px solid var(--mist-200);
+      border-top-color: var(--sea-400);
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .post-item {
+      display: flex;
+      gap: 12px;
+      padding: 14px 20px;
+      border-bottom: 1px solid var(--mist-100);
+      cursor: pointer;
+      transition: background 0.12s;
+      align-items: flex-start;
+    }
+    .post-item:hover { background: var(--cream); }
+    .post-item.active {
+      background: #EBF1F4;
+      border-left: 3px solid var(--sea-400);
+      padding-left: 17px;
+    }
+    .post-thumb {
+      width: 60px;
+      height: 60px;
+      border-radius: 8px;
+      object-fit: cover;
+      flex-shrink: 0;
+      background: var(--mist-100);
+    }
+    .post-thumb-empty {
+      width: 60px;
+      height: 60px;
+      border-radius: 8px;
+      background: var(--mist-100);
+      flex-shrink: 0;
+    }
+    .post-info { flex: 1; min-width: 0; }
+    .post-cat {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--sea-400);
+      margin-bottom: 4px;
+    }
+    .post-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--mist-900);
+      line-height: 1.4;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin-bottom: 4px;
+    }
+    .post-date {
+      font-size: 11px;
+      color: var(--mist-500);
+    }
+
+    /* ── Preview pane ────────────────────────────────────────── */
+    .preview-pane {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .preview-toolbar {
+      padding: 14px 22px;
+      background: var(--white);
+      border-bottom: 1px solid var(--mist-200);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .subject-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: var(--mist-600);
+      white-space: nowrap;
+    }
+    .subject-input {
+      flex: 1;
+      border: 1px solid var(--mist-200);
+      border-radius: 8px;
+      padding: 8px 12px;
+      font-size: 14px;
+      color: var(--mist-900);
+      background: var(--cream);
+      font-family: inherit;
+      outline: none;
+      transition: border-color 0.15s, background 0.15s;
+    }
+    .subject-input:focus {
+      border-color: var(--sea-400);
+      background: var(--white);
+    }
+    .subject-input:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+    .btn-send {
+      background: var(--terracotta);
+      color: var(--white);
+      padding: 9px 22px;
+      border-radius: 100px;
+      font-size: 13.5px;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      font-family: inherit;
+      white-space: nowrap;
+      transition: background 0.15s, opacity 0.15s;
+      flex-shrink: 0;
+    }
+    .btn-send:hover:not(:disabled) { background: var(--terracotta-dk); }
+    .btn-send:disabled { opacity: 0.45; cursor: not-allowed; }
+
+    .preview-bg {
+      flex: 1;
+      overflow: auto;
+      background: #DDD9D3;
+      padding: 36px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .preview-bg.empty {
+      justify-content: center;
+    }
+    .empty-state { text-align: center; }
+    .empty-emblem {
+      width: 56px;
+      height: 56px;
+      object-fit: contain;
+      opacity: 0.22;
+      margin-bottom: 18px;
+    }
+    .empty-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      color: var(--mist-700);
+      margin-bottom: 8px;
+    }
+    .empty-text {
+      font-size: 13.5px;
+      color: var(--mist-500);
+    }
+    .preview-iframe {
+      display: block;
+      width: 100%;
+      max-width: 640px;
+      border: none;
+      border-radius: 16px;
+      box-shadow: 0 10px 48px rgba(41, 53, 57, 0.18);
+    }
+
+    /* ── Toast ───────────────────────────────────────────────── */
+    .toast-wrap {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      pointer-events: none;
+    }
+    .toast {
+      padding: 13px 18px;
+      border-radius: 10px;
+      font-size: 13.5px;
+      font-weight: 500;
+      animation: slideUp 0.2s ease;
+      max-width: 340px;
+      pointer-events: auto;
+    }
+    .toast-success { background: var(--mist-900); color: var(--white); }
+    .toast-error   { background: var(--error-bg); color: var(--white); }
+    .toast-info    { background: var(--sea-600);  color: var(--white); }
+    @keyframes slideUp {
+      from { transform: translateY(8px); opacity: 0; }
+      to   { transform: translateY(0);   opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── Header ─────────────────────────────────────────────────── -->
+<header class="header">
+  <div class="header-left">
+    <img src="https://flourandflaneuse.com/emblem.png" alt="" class="header-emblem" />
+    <div>
+      <div class="header-title">Newsletter Tool</div>
+      <div class="header-sub">Flour &amp; Flâneuse</div>
+    </div>
+  </div>
+  <button class="btn-settings" id="openSettings">
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+    </svg>
+    Settings
+    <span class="settings-dot" id="settingsDot" style="display:none;"></span>
+  </button>
+</header>
+
+<!-- ── Settings modal ─────────────────────────────────────────── -->
+<div class="overlay" id="settingsOverlay">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="settingsTitle">
+    <div class="modal-title" id="settingsTitle">Settings</div>
+    <p class="modal-desc">
+      Your API key is saved only in this browser and is never shared anywhere except directly with Brevo when you send.
+    </p>
+    <div class="form-group">
+      <label class="form-label" for="apiKey">Brevo API Key</label>
+      <input type="password" class="form-input" id="apiKey" placeholder="xkeysib-…" autocomplete="off" spellcheck="false" />
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="listId">List ID</label>
+      <input type="number" class="form-input" id="listId" placeholder="e.g. 2" min="1" />
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label" for="senderName">Sender Name</label>
+        <input type="text" class="form-input" id="senderName" placeholder="Sarita" />
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="senderEmail">Sender Email</label>
+        <input type="email" class="form-input" id="senderEmail" placeholder="hello@flourandflaneuse.com" />
+      </div>
+    </div>
+    <div class="modal-actions">
+      <button class="btn btn-cancel" id="cancelSettings">Cancel</button>
+      <button class="btn btn-save" id="saveSettings">Save Settings</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── Confirm send modal ─────────────────────────────────────── -->
+<div class="overlay" id="confirmOverlay">
+  <div class="confirm-modal" role="dialog" aria-modal="true" aria-labelledby="confirmTitle">
+    <div class="confirm-icon">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C4714A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+      </svg>
+    </div>
+    <div class="confirm-title" id="confirmTitle">Send this newsletter?</div>
+    <p class="confirm-body" id="confirmBody">
+      This will send an email to everyone on your list.
+    </p>
+    <div class="confirm-actions">
+      <button class="btn btn-cancel" id="cancelConfirm">Cancel</button>
+      <button class="btn-send-confirm" id="confirmSend">Yes, send it</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── Main ───────────────────────────────────────────────────── -->
+<main class="main">
+
+  <!-- Posts sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-head">
+      <div class="sidebar-label">Posts from RSS</div>
+    </div>
+    <div id="postsList" style="display:contents;">
+      <div class="loading-wrap">
+        <div class="spinner"></div>
+        Loading posts…
+      </div>
+    </div>
+  </aside>
+
+  <!-- Preview pane -->
+  <section class="preview-pane">
+    <div class="preview-toolbar">
+      <span class="subject-label">Subject</span>
+      <input
+        type="text"
+        class="subject-input"
+        id="subjectInput"
+        placeholder="Select a post to draft the email…"
+        disabled
+      />
+      <button class="btn-send" id="sendBtn" disabled>Send to List</button>
+    </div>
+
+    <div class="preview-bg empty" id="previewBg">
+      <div class="empty-state">
+        <img src="https://flourandflaneuse.com/emblem.png" alt="" class="empty-emblem" />
+        <div class="empty-title">Select a post</div>
+        <div class="empty-text">Choose a post on the left to preview its email</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Toast container -->
+<div class="toast-wrap" id="toastWrap"></div>
+
+
+<script>
+  // ─── Constants ────────────────────────────────────────────────────────────
+  const STORAGE_KEY  = 'ff_nl_settings';
+  const FEED_URL     = 'https://flourandflaneuse.com/feed.xml';
+  const CORS_PROXY   = 'https://api.allorigins.win/raw?url=';
+  const BREVO_BASE   = 'https://api.brevo.com/v3';
+
+  // ─── State ────────────────────────────────────────────────────────────────
+  let selectedPost = null;
+
+  // ─── Settings helpers ─────────────────────────────────────────────────────
+  function loadSettings() {
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; }
+    catch { return {}; }
+  }
+
+  function saveSettings(s) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(s));
+  }
+
+  function settingsComplete(s) {
+    return !!(s && s.apiKey && s.listId && s.senderName && s.senderEmail);
+  }
+
+  function syncSettingsDot() {
+    const s = loadSettings();
+    document.getElementById('settingsDot').style.display =
+      settingsComplete(s) ? 'none' : 'inline-block';
+  }
+
+  function populateSettingsForm() {
+    const s = loadSettings();
+    document.getElementById('apiKey').value      = s.apiKey      || '';
+    document.getElementById('listId').value      = s.listId      || '';
+    document.getElementById('senderName').value  = s.senderName  || '';
+    document.getElementById('senderEmail').value = s.senderEmail || '';
+  }
+
+  // ─── Settings modal ───────────────────────────────────────────────────────
+  document.getElementById('openSettings').addEventListener('click', () => {
+    populateSettingsForm();
+    document.getElementById('settingsOverlay').classList.add('open');
+  });
+
+  document.getElementById('cancelSettings').addEventListener('click', () => {
+    document.getElementById('settingsOverlay').classList.remove('open');
+  });
+
+  document.getElementById('settingsOverlay').addEventListener('click', (e) => {
+    if (e.target === document.getElementById('settingsOverlay'))
+      document.getElementById('settingsOverlay').classList.remove('open');
+  });
+
+  document.getElementById('saveSettings').addEventListener('click', () => {
+    const s = {
+      apiKey:      document.getElementById('apiKey').value.trim(),
+      listId:      parseInt(document.getElementById('listId').value.trim(), 10) || '',
+      senderName:  document.getElementById('senderName').value.trim(),
+      senderEmail: document.getElementById('senderEmail').value.trim(),
+    };
+    if (!s.apiKey)      { showToast('API key is required', 'error'); return; }
+    if (!s.listId)      { showToast('List ID is required', 'error'); return; }
+    if (!s.senderName)  { showToast('Sender name is required', 'error'); return; }
+    if (!s.senderEmail) { showToast('Sender email is required', 'error'); return; }
+
+    saveSettings(s);
+    syncSettingsDot();
+    document.getElementById('settingsOverlay').classList.remove('open');
+    showToast('Settings saved', 'success');
+  });
+
+  // ─── RSS fetching ─────────────────────────────────────────────────────────
+  async function fetchPosts() {
+    const proxyUrl = CORS_PROXY + encodeURIComponent(FEED_URL);
+    const res = await fetch(proxyUrl);
+    if (!res.ok) throw new Error(`Proxy returned ${res.status}`);
+    const xml = await res.text();
+    return parseRSS(xml);
+  }
+
+  function parseRSS(xmlText) {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(xmlText, 'application/xml');
+    const parserError = doc.querySelector('parsererror');
+    if (parserError) throw new Error('Could not parse the RSS feed');
+
+    return Array.from(doc.querySelectorAll('item')).map(item => ({
+      title:       (item.querySelector('title')?.textContent       || '').trim(),
+      link:        (item.querySelector('link')?.textContent        || '').trim(),
+      description: (item.querySelector('description')?.textContent || '').trim(),
+      image:       item.querySelector('enclosure')?.getAttribute('url') || '',
+      category:    (item.querySelector('category')?.textContent    || '').trim(),
+      pubDate:     (item.querySelector('pubDate')?.textContent     || '').trim(),
+    }));
+  }
+
+  function fmtDate(str) {
+    try {
+      return new Date(str).toLocaleDateString('en-US', {
+        year: 'numeric', month: 'long', day: 'numeric'
+      });
+    } catch { return str; }
+  }
+
+  // ─── Render posts sidebar ─────────────────────────────────────────────────
+  function renderPosts(posts) {
+    const list = document.getElementById('postsList');
+    if (!posts.length) {
+      list.innerHTML = '<div class="loading-wrap">No posts found in the feed.</div>';
+      return;
+    }
+    list.innerHTML = posts.map((p, i) => `
+      <div class="post-item" data-index="${i}" role="button" tabindex="0"
+           aria-label="Select post: ${esc(p.title)}">
+        ${p.image
+          ? `<img class="post-thumb" src="${esc(p.image)}" alt="" loading="lazy"
+               onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'post-thumb-empty'}))" />`
+          : `<div class="post-thumb-empty"></div>`
+        }
+        <div class="post-info">
+          ${p.category ? `<div class="post-cat">${esc(p.category)}</div>` : ''}
+          <div class="post-title">${esc(p.title)}</div>
+          <div class="post-date">${fmtDate(p.pubDate)}</div>
+        </div>
+      </div>
+    `).join('');
+
+    list.querySelectorAll('.post-item').forEach((el, i) => {
+      el.addEventListener('click',   () => selectPost(posts[i], el));
+      el.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); selectPost(posts[i], el); }
+      });
+    });
+  }
+
+  // ─── Select post ──────────────────────────────────────────────────────────
+  function selectPost(post, el) {
+    selectedPost = post;
+
+    document.querySelectorAll('.post-item').forEach(e => e.classList.remove('active'));
+    el.classList.add('active');
+
+    const subj = document.getElementById('subjectInput');
+    subj.value    = `New post: ${post.title}`;
+    subj.disabled = false;
+
+    document.getElementById('sendBtn').disabled = false;
+
+    renderPreview(post);
+  }
+
+  // ─── Preview ──────────────────────────────────────────────────────────────
+  function renderPreview(post) {
+    const bg = document.getElementById('previewBg');
+    bg.classList.remove('empty');
+    bg.innerHTML = '';
+
+    const iframe = document.createElement('iframe');
+    iframe.className = 'preview-iframe';
+    iframe.setAttribute('title', 'Email preview');
+
+    const html  = buildEmailHtml(post, false);
+    const blob  = new Blob([html], { type: 'text/html' });
+    const url   = URL.createObjectURL(blob);
+    iframe.src  = url;
+
+    iframe.addEventListener('load', () => {
+      try {
+        const h = iframe.contentDocument.documentElement.scrollHeight;
+        iframe.style.height = h + 'px';
+      } catch {
+        iframe.style.height = '900px';
+      }
+      URL.revokeObjectURL(url);
+    });
+
+    bg.appendChild(iframe);
+  }
+
+  // ─── Email HTML template ──────────────────────────────────────────────────
+  function buildEmailHtml(post, forSending) {
+    const unsub = forSending ? '{unsubscribeLink}' : '#';
+
+    const heroBlock = post.image ? `
+          <tr>
+            <td style="padding:0 32px 28px;">
+              <img
+                src="${esc(post.image)}"
+                alt="${esc(post.title)}"
+                width="536"
+                style="width:100%;max-width:536px;height:auto;border-radius:14px;display:block;"
+              />
+            </td>
+          </tr>` : '';
+
+    const catBlock = post.category ? `
+          <tr>
+            <td style="padding:0 40px 10px;">
+              <span style="font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:700;
+                           letter-spacing:0.14em;text-transform:uppercase;color:#7a98a5;">
+                ${esc(post.category)}
+              </span>
+            </td>
+          </tr>` : '';
+
+    return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>${esc(post.title)}</title>
+</head>
+<body style="margin:0;padding:0;background-color:#EEEAE4;font-family:Georgia,'Times New Roman',serif;">
+
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+         style="background-color:#EEEAE4;padding:40px 20px;">
+    <tr>
+      <td align="center">
+
+        <!--[if mso]><table width="600" cellpadding="0" cellspacing="0"><tr><td><![endif]-->
+        <table role="presentation" cellpadding="0" cellspacing="0"
+               style="background-color:#FAF8F5;border-radius:20px;overflow:hidden;
+                      max-width:600px;width:100%;">
+
+          <!-- Emblem header -->
+          <tr>
+            <td align="center" style="padding:44px 40px 32px;">
+              <img
+                src="https://flourandflaneuse.com/emblem.png"
+                alt="Flour &amp; Fl&#226;neuse"
+                width="68" height="68"
+                style="display:block;width:68px;height:68px;object-fit:contain;"
+              />
+              <p style="margin:12px 0 0;font-family:Arial,Helvetica,sans-serif;font-size:10px;
+                        font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#8799a2;">
+                Flour &amp; Fl&#226;neuse
+              </p>
+            </td>
+          </tr>
+
+          <!-- Hero image -->
+          ${heroBlock}
+
+          <!-- Category pill -->
+          ${catBlock}
+
+          <!-- Title -->
+          <tr>
+            <td style="padding:0 40px 14px;">
+              <h1 style="font-family:Georgia,'Times New Roman',serif;font-size:27px;
+                         font-weight:600;color:#293539;margin:0;line-height:1.32;">
+                ${esc(post.title)}
+              </h1>
+            </td>
+          </tr>
+
+          <!-- Terracotta rule -->
+          <tr>
+            <td style="padding:0 40px 22px;">
+              <div style="width:44px;height:2px;background-color:#C4714A;"></div>
+            </td>
+          </tr>
+
+          <!-- Description / excerpt -->
+          <tr>
+            <td style="padding:0 40px 36px;">
+              <p style="font-family:Georgia,'Times New Roman',serif;font-size:16px;
+                        color:#536670;line-height:1.82;margin:0;">
+                ${esc(post.description)}
+              </p>
+            </td>
+          </tr>
+
+          <!-- CTA button -->
+          <tr>
+            <td style="padding:0 40px 48px;">
+              <a href="${esc(post.link)}"
+                 style="display:inline-block;background-color:#C4714A;color:#ffffff;
+                        font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:700;
+                        text-decoration:none;padding:14px 36px;border-radius:100px;
+                        letter-spacing:0.03em;">
+                Read the full post &#8594;
+              </a>
+            </td>
+          </tr>
+
+          <!-- Divider -->
+          <tr>
+            <td style="padding:0 40px;">
+              <div style="height:1px;background-color:#d3dce0;"></div>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding:26px 40px 38px;text-align:center;">
+              <p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;
+                        color:#8799a2;margin:0 0 8px;line-height:1.65;">
+                You&#8217;re receiving this because you subscribed to Flour &amp; Fl&#226;neuse.
+              </p>
+              <p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;
+                        color:#8799a2;margin:0;">
+                <a href="${unsub}"
+                   style="color:#a5b3bb;text-decoration:underline;">Unsubscribe</a>
+                &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+                <a href="https://flourandflaneuse.com"
+                   style="color:#a5b3bb;text-decoration:underline;">Visit the blog</a>
+              </p>
+            </td>
+          </tr>
+
+        </table>
+        <!--[if mso]></td></tr></table><![endif]-->
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>`;
+  }
+
+  // ─── Send flow ────────────────────────────────────────────────────────────
+  document.getElementById('sendBtn').addEventListener('click', () => {
+    const s = loadSettings();
+    if (!settingsComplete(s)) {
+      showToast('Fill in your settings first', 'error');
+      populateSettingsForm();
+      document.getElementById('settingsOverlay').classList.add('open');
+      return;
+    }
+    if (!selectedPost) return;
+
+    const subject = document.getElementById('subjectInput').value.trim();
+    if (!subject) { showToast('Subject line cannot be empty', 'error'); return; }
+
+    // Show confirm dialog
+    document.getElementById('confirmBody').innerHTML =
+      `This will send <span class="confirm-post-title">"${esc(selectedPost.title)}"</span>` +
+      ` to everyone on your list (Brevo List ID&nbsp;${s.listId}).`;
+    document.getElementById('confirmOverlay').classList.add('open');
+  });
+
+  document.getElementById('cancelConfirm').addEventListener('click', () => {
+    document.getElementById('confirmOverlay').classList.remove('open');
+  });
+
+  document.getElementById('confirmOverlay').addEventListener('click', (e) => {
+    if (e.target === document.getElementById('confirmOverlay'))
+      document.getElementById('confirmOverlay').classList.remove('open');
+  });
+
+  document.getElementById('confirmSend').addEventListener('click', async () => {
+    document.getElementById('confirmOverlay').classList.remove('open');
+    await executeSend();
+  });
+
+  async function executeSend() {
+    const s       = loadSettings();
+    const subject = document.getElementById('subjectInput').value.trim();
+    const btn     = document.getElementById('sendBtn');
+
+    btn.disabled    = true;
+    btn.textContent = 'Creating campaign…';
+
+    try {
+      // Step 1 — create the campaign
+      showToast('Creating campaign in Brevo…', 'info');
+
+      const campaignRes = await fetch(`${BREVO_BASE}/emailCampaigns`, {
+        method: 'POST',
+        headers: {
+          'accept':       'application/json',
+          'api-key':      s.apiKey,
+          'content-type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: `${selectedPost.title} — ${new Date().toLocaleDateString('en-US', {
+            month: 'short', day: 'numeric', year: 'numeric'
+          })}`,
+          subject:     subject,
+          sender:      { name: s.senderName, email: s.senderEmail },
+          type:        'classic',
+          htmlContent: buildEmailHtml(selectedPost, true),
+          recipients:  { listIds: [parseInt(s.listId, 10)] },
+        }),
+      });
+
+      const campaignData = await campaignRes.json();
+      if (!campaignRes.ok) {
+        throw new Error(campaignData.message || `Campaign creation failed (${campaignRes.status})`);
+      }
+
+      const campaignId = campaignData.id;
+      btn.textContent = 'Sending…';
+      showToast(`Campaign #${campaignId} created. Sending now…`, 'info');
+
+      // Step 2 — send immediately
+      const sendRes = await fetch(`${BREVO_BASE}/emailCampaigns/${campaignId}/sendNow`, {
+        method: 'POST',
+        headers: {
+          'accept':  'application/json',
+          'api-key': s.apiKey,
+        },
+      });
+
+      if (!sendRes.ok) {
+        let msg = `Send failed (${sendRes.status})`;
+        try { const d = await sendRes.json(); msg = d.message || msg; } catch {}
+        throw new Error(msg);
+      }
+
+      showToast('Newsletter sent successfully!', 'success');
+
+    } catch (err) {
+      showToast('Error: ' + err.message, 'error');
+      console.error('[Newsletter Tool]', err);
+    } finally {
+      btn.disabled    = false;
+      btn.textContent = 'Send to List';
+    }
+  }
+
+  // ─── Toast ────────────────────────────────────────────────────────────────
+  function showToast(msg, type = 'info') {
+    const wrap  = document.getElementById('toastWrap');
+    const toast = document.createElement('div');
+    toast.className = `toast toast-${type}`;
+    toast.textContent = msg;
+    wrap.appendChild(toast);
+    setTimeout(() => {
+      toast.style.transition = 'opacity 0.3s';
+      toast.style.opacity = '0';
+      setTimeout(() => toast.remove(), 350);
+    }, 5000);
+  }
+
+  // ─── HTML escaping ────────────────────────────────────────────────────────
+  function esc(str) {
+    return String(str)
+      .replace(/&/g,  '&amp;')
+      .replace(/</g,  '&lt;')
+      .replace(/>/g,  '&gt;')
+      .replace(/"/g,  '&quot;')
+      .replace(/'/g,  '&#039;');
+  }
+
+  // ─── Init ─────────────────────────────────────────────────────────────────
+  async function init() {
+    syncSettingsDot();
+
+    // If settings are not yet configured, nudge the user
+    if (!settingsComplete(loadSettings())) {
+      setTimeout(() => {
+        showToast('Open Settings to add your Brevo API key before sending.', 'info');
+      }, 1200);
+    }
+
+    try {
+      const posts = await fetchPosts();
+      renderPosts(posts);
+    } catch (err) {
+      document.getElementById('postsList').innerHTML = `
+        <div class="loading-wrap" style="color:var(--error-bg);">
+          ${esc(err.message)}
+        </div>`;
+    }
+  }
+
+  init();
+</script>
+</body>
+</html>
