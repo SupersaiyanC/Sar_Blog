@@ -55,6 +55,26 @@ Equipment: 8"x4" loaf pan, food processor or blender, digital scale
 
 * 150g powdered sugar
 * 1 tablespoon sour cream
-* Zest of one clementine (keep some to sprinkle on top of the final cake)
-* Juice of one clementine
+* Zest of 1 clementine (keep some to sprinkle on top of the final cake)
+* Juice of 1 clementine
 * 15-30ml of milk (15-30g approx)
+
+**Instructions:**
+
+> 1. Wash your whole clementines. You should need 4 for this recipe unless they are very small or very large.
+>
+> 2. Take 2 of the whole clementines and prick them several times all around with either a meat thermometer tip, sharp knife, or work. Make sure that you prick through the full peel, otherwise the clementines could explode in the microwave.
+>
+> 3. Place the clementines in a microwave safe bowl. Microwave on high for 8 minutes. Once done, take out and let cool for around 10 minutes.
+>
+> 4. In the meantime, whisk the flour, almond flour, baking powder, and salt together in a medium size mixing bowl.
+>
+> 5. Once you are able to handle the clementines (please be careful!), break them apart with your hands and place them in the food processor or blender. Pulse the best you can around 15 times, it will be a bit tricky.
+>
+> 6. Add the sour cream and milk to the pulsed clementines. Continue pulsing until you are able to blend the mixture so it looks almost like a smoothie. It's ok if you can't get it completely smooth. Once you get it as smooth as possible, pour it into a bowl and take out any large pieces of peel. You don't want any pieces bigger than a pea. Add the vanilla and mix to combine.
+>
+> 7. Place room temperature butter into a large mixing bowl. Beat with a spatula into very smooth and creamy, around 1 minute. You could also do this with a stand mixer set to medium, but it is doable by hand. Add the sugar, and beat until the mixture is smooth and fluffy, around 2 minutes.
+>
+> 8. Add each egg one at a time to the mixture, beating until each egg is completly incorperated. Make sure to scrap the bottom of the bowl and ensure that everything is well incorperated.
+>
+>
