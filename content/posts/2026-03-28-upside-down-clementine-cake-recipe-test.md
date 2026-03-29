@@ -6,7 +6,7 @@ excerpt: Last night I rewatched one of my favorite movies, The Secret Life of
   Walter Mitty. I was inspired to try to develop this clementine cake from the
   movie!
 category: Baking
-featured: false
+featured: true
 ---
 If you've never seen *The Secret Life of Walter Mitty*, add it to your watch list for this week! It's a little wacky at first, but give it a chance, and you might really enjoy it. The story is very heartfelt and really makes you think about life and traveling...I won't give too much away.
 
