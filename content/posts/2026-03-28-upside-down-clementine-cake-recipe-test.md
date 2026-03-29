@@ -73,8 +73,14 @@ Equipment: 8"x4" loaf pan, food processor or blender, digital scale
 >
 > 6. Add the sour cream and milk to the pulsed clementines. Continue pulsing until you are able to blend the mixture so it looks almost like a smoothie. It's ok if you can't get it completely smooth. Once you get it as smooth as possible, pour it into a bowl and take out any large pieces of peel. You don't want any pieces bigger than a pea. Add the vanilla and mix to combine.
 >
-> 7. Place room temperature butter into a large mixing bowl. Beat with a spatula into very smooth and creamy, around 1 minute. You could also do this with a stand mixer set to medium, but it is doable by hand. Add the sugar, and beat until the mixture is smooth and fluffy, around 2 minutes.
+> 7. Preheat the oven to 350 F/175 C.
 >
-> 8. Add each egg one at a time to the mixture, beating until each egg is completly incorperated. Make sure to scrap the bottom of the bowl and ensure that everything is well incorperated.
+> 8. Place room temperature butter into a large mixing bowl. Beat with a spatula into very smooth and creamy, around 1 minute. You could also do this with a stand mixer set to medium, but it is doable by hand. Add the sugar, and beat until the mixture is smooth and fluffy, around 2 minutes.
+>
+> 9. Add each egg one at a time to the mixture, beating until each egg is completly incorperated. Make sure to scrape the bottom of the bowl and ensure that everything is well mixed.
+>
+> 10. Add the flour mixture to the bowl and mix (low speed if using standmixer) until 60-70% is combined. Add the clementine mixture and mix (low speed if using standmixer) until you can no longer see any dry flour or pockets of liquid. Scrape the bottom of the bowl a few times to ensure everything is combined. 
+>
+> 11. 
 >
 >
