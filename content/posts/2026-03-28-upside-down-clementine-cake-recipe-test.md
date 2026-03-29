@@ -34,7 +34,7 @@ I didn't fill my pan all the way because I got nervous it would overflow (it did
 
 ## Upside Down Clementine Cake Recipe
 
-Prep Time: 40 minutes            Cook Time: 40 minutes            Assembly Time: 70 minutes (including cooling)
+*Prep Time:* 40 minutes        *Cook Time:* 40 minutes        *Assembly Time:* 60-90 minutes (including cooling)
 
 Equipment: 8"x4" loaf pan, food processor or blender, digital scale
 
@@ -49,6 +49,7 @@ Equipment: 8"x4" loaf pan, food processor or blender, digital scale
 * 60ml milk (2% or whole)
 * 1 tsp vanilla extract
 * 113g butter (room temperature, I honestly used salted butter and the final cake wasn't overly salty)
+* 200g sugar + 1 tbsp for the pan
 * 2 large eggs (room temperature)
 
 **Icing Ingredients:**
@@ -57,9 +58,9 @@ Equipment: 8"x4" loaf pan, food processor or blender, digital scale
 * 1 tablespoon sour cream
 * Zest of 1 clementine (keep some to sprinkle on top of the final cake)
 * Juice of 1 clementine
-* 15-30ml of milk (15-30g approx)
+* Milk (to preference)
 
-**Instructions:**
+**Cake Instructions:**
 
 > 1. Wash your whole clementines. You should need 4 for this recipe unless they are very small or very large.
 >
@@ -75,12 +76,22 @@ Equipment: 8"x4" loaf pan, food processor or blender, digital scale
 >
 > 7. Preheat the oven to 350 F/175 C.
 >
-> 8. Place room temperature butter into a large mixing bowl. Beat with a spatula into very smooth and creamy, around 1 minute. You could also do this with a stand mixer set to medium, but it is doable by hand. Add the sugar, and beat until the mixture is smooth and fluffy, around 2 minutes.
+> 8. Place room temperature butter into a large mixing bowl. Beat with a spatula into very smooth and creamy, around 1 minute. You could also do this with a stand mixer set to medium, but it is doable by hand. Add the 200g sugar, and beat until the mixture is smooth and fluffy, around 2 minutes.
 >
 > 9. Add each egg one at a time to the mixture, beating until each egg is completly incorperated. Make sure to scrape the bottom of the bowl and ensure that everything is well mixed.
 >
 > 10. Add the flour mixture to the bowl and mix (low speed if using standmixer) until 60-70% is combined. Add the clementine mixture and mix (low speed if using standmixer) until you can no longer see any dry flour or pockets of liquid. Scrape the bottom of the bowl a few times to ensure everything is combined. 
 >
-> 11. 
+> 11. Spray your loaf pan with baking spray and line it with parchment paper. Sprinkle the 1 tbsp of sugar onto the bottom of the pan. Take 1 clementine and cut it into horizontal slices, around 1/4" thick. Take 4-5 slices (they can overlap slightly) and place them on the pan on top of the sugar. Pour the batter careful into the pan. Use a spatula to even out the top.
 >
+> 12. Bake at 350 F for around 40 minutes, rotating halfway through. The color should be a deep golden brown. Check doneness with a toothpick or a knife. Remember not to place your tester all the way to the bottom of the pan. It will come out wet if it touches the fruit at the bottom.
 >
+> 13. Take cake out of the oven and let cool initially for 15 minutes (if you wait too much longer then the sugar at the bottom might solidify and make it hard to turn out). Place a wire cooling rack over the pan and invert the cake. Careful peel the parchment off, ensuring that the fruit doesn't rip off the bottom. Let the cake cool completely (60-90 minutes).
+
+**Glaze Instructions:**
+
+> 14. Place powdered sugar in a mixing bowl. Add the zest of one clementine (keep a tiny bit of leftover zest), then the juice of that same clementine, plus the sour cream. 
+>
+> 15. Add a splash of milk and begin mixing the glaze. Add additional milk to make the glaze your desired consistancy. Only add small splashes of milk at a time (no more than 1 tsp) to avoid making the glaze too thin too quickly.
+>
+> 16. Take the glaze and power it over the cooled cake. Top the cake with a final sprinkling of clementine zest.
