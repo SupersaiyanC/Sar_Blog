@@ -12,7 +12,7 @@ If you've never seen *The Secret Life of Walter Mitty*, add it to your watch lis
 
 But anyways, an important food from this movie is Walter's mom's clementine cake! After a little research, I discovered that clementine cake is generally made by boiling whole clementines, mashing them, and adding them to a cake batter made with almond flour.
 
-I really want to work more on developing my own recipes. I know that it takes a lot of time with trial and error, research, and tiny adjustments. It's technical... but I'm an engineer, and I'm pretty good at technical things. So today is Trial #1 of Clementine Cake. I will walk you through my process and why I made certain decisions. There is also an actual readable recipe at the end of the post! Spoiler: the cake turned out really yummy. I don't think you're supposed to say the recipe is perfect after only one trial, but it's really scrumptious. I highly recommend you try it!
+I really want to work more on developing my own recipes. I know that it takes a lot of time with trial and error, research, and tiny adjustments. It's technical... but I'm an engineer, and I'm pretty good at technical things. So today is Trial #1 of Clementine Cake. I will walk you through my process and why I made certain decisions. There is also an actual readable recipe at the end of the post! *Spoiler:* the cake turned out really yummy. I don't think you're supposed to say the recipe is perfect after only one trial, but it's really scrumptious. I highly recommend you try it!
 
 ## I'm Not Patient
 
@@ -30,6 +30,8 @@ I knew I didn't want the cake to be 100% almond flour. I enjoy almond flour cake
 In the movie, the cake is made in a round pan and is topped with what I assume are candied clementine slices. When I looked up how to make these, it once again involved boiling clementines for an absurd amount of time! This made me think: what if I made the cake an upside-down cake? This way, I could add clementines to the bottom of the pan with some sugar, then have them perfectly cooked once the cake was done and turned out.
 
 I didn't fill my pan all the way because I got nervous it would overflow (it didn't, haha), but I had some extra batter which I baked into two upside-down cupcakes. These were DELICIOUS (dare I say just as good if not better than the main product??). The ratio of the fruit to cake is perfect. If I ever have to make something for a tea party or a lunch, I will 100% be making these.
+
+Here is the recipe for this trial of the clementine cake. It turned out really delicious. It was so moist and had a really nice bite that had a delicious clementine flavor. I'm biased, but I highly recommend you try it!
 
 ## Upside Down Clementine Cake Recipe
 
@@ -94,3 +96,7 @@ Equipment: 8"x4" loaf pan, food processor or blender, digital scale
 > 15. 15. Add a small splash of milk and begin mixing the glaze. Add additional milk to reach your desired consistency. Only add small splashes of milk at a time (no more than 1 tsp) to avoid making the glaze too thin too quickly.
 >
 > 16. Take the glaze and pour it over the cooled cake. Top the cake with a final sprinkling of clementine zest.
+
+## For Next Time
+
+This cake was so good. I think the crumb on it is perfect. I think one of the main things I want to improve is the amount of clementine on the bottom/top of the cake. I want more fruit. Maybe I can line the whole pan with slices of clementine? The ratio of fruit to cake in the cupcakes that I tested with the batter was really good, and I want to replicate that for the cake.
