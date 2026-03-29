@@ -31,9 +31,11 @@ In the movie, the cake is made in a round pan and is topped with what I assume a
 
 I didn't fill my pan all the way because I got nervous it would overflow (it didn't, haha), but I had some extra batter which I baked into two upside-down cupcakes. These were DELICIOUS (dare I say just as good if not better than the main product??). The ratio of the fruit to cake is perfect. If I ever have to make something for a tea party or a lunch, I will 100% be making these.
 
+![](/images/uploads/img_4072-1-.jpeg "The cake before glazing")
+
 Here is the recipe for this trial of the clementine cake. It turned out really delicious. It was so moist and had a really nice bite that had a delicious clementine flavor. I'm biased, but I highly recommend you try it!
 
-## Upside Down Clementine Cake Recipe
+## Upside-Down Clementine Cake Recipe
 
 *Prep Time:* 40 minutes        *Cook Time:* 40 minutes        *Assembly Time:* 60-90 minutes (including cooling)
 
@@ -97,6 +99,8 @@ Equipment: 8"x4" loaf pan, food processor or blender, digital scale
 >
 > 16. Take the glaze and pour it over the cooled cake. Top the cake with a final sprinkling of clementine zest.
 
+![](/images/uploads/img_4080-1-.jpeg)
+
 ## For Next Time
 
-This cake was so good. I think the crumb on it is perfect. I think one of the main things I want to improve is the amount of clementine on the bottom/top of the cake. I want more fruit. Maybe I can line the whole pan with slices of clementine? The ratio of fruit to cake in the cupcakes that I tested with the batter was really good, and I want to replicate that for the cake.
+This cake was so good. I think the crumb on it is perfect (if I do say so myself). I think one of the main things I want to improve is the amount of clementine on the bottom of the cake. I want more fruit. Maybe I can line the entire pan with slices of clementine? The ratio of fruit to cake in the cupcakes that I tested with the batter was really good, and I want to replicate that for the cake. For Trial #1, though, I will take this as a win. Hopefully, I can develop it further and post an updated recipe in the future!
