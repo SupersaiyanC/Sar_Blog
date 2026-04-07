@@ -18,3 +18,7 @@ I really want to test this again and again and get it right for myself. I know t
 From my research, there are 3 main methods for bringing chocolate chip cookies together; specifically methods to create the sugar-lipid-protein structure of a cookie.
 
 **Method 1: Creaming**
+
+This method is the usual, traditional way to make chocolate chip cookies, especially for bakeries. The sugar and room temperature butter are creamed together, and the chemistry/physics is actually pretty cool. The sugar aerates the butter by carving small air pockets into the fat. When these air pockets are heated in the oven, they expand! This makes a soft/pillowy cookie.
+
+**Method 2: Egg Foaming**
