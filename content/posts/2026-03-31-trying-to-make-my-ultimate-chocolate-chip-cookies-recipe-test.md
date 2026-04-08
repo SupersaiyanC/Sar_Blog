@@ -19,6 +19,12 @@ From my research, there are 3 main methods for bringing chocolate chip cookies t
 
 **Method 1: Creaming**
 
-This method is the usual, traditional way to make chocolate chip cookies, especially for bakeries. The sugar and room temperature butter are creamed together, and the chemistry/physics is actually pretty cool. The sugar aerates the butter by carving small air pockets into the fat. When these air pockets are heated in the oven, they expand! This makes a soft/pillowy cookie.
+This method is the usual, traditional way to make chocolate chip cookies, especially for bakeries. The sugar and room temperature butter are creamed together, and the chemistry/physics is actually pretty cool. The sugar aerates the butter by carving small air pockets into the fat. When these air pockets are heated in the oven, they expand! This makes a soft/pillowy cookie that comes out of the oven but due to the unstableness of the emulsion, the cookie can get hard pretty soon after being baked.
 
 **Method 2: Egg Foaming**
+
+In this method, the sugar is whisked with the eggs before liquid butter is intoduced to the mix. This creates a stable protein structure of the eggs and sugar that traps small air bubbles. An emulsion is formed when the butter is streamed in. The two cool things about this method were that the cookie has less grease spillage. Because the proteins are pre-stablized in this way, there isn't as much fat leaking out of the final cookies. Also, you get a shiny crust on top and a thicker, uniform, somewhat cakey cookie.
+
+**Method 3: Toffee**
+
+This method involves whisking sugar into lukewarm browned butter, followed by the eggs. This method creates a kind of loose partial caramel, as the sugar partially dissolves into the brown butter. The result of this is a cookie that is dense, chewy, very brown buttery, and butterstochy.
