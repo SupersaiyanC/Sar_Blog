@@ -185,7 +185,25 @@ A standalone `newsletter-tool.html` file (open directly in any browser, no serve
 
 ---
 
-## What will NOT change
+## Open Graph & SEO Meta Tags (2026-04-08)
+
+### OG — What this change does
+
+Adds full Open Graph and Twitter Card meta tags to all pages so Google, iMessage, WhatsApp, Twitter, and Facebook render rich previews (title, description, image) when any link is shared.
+
+### OG — Key detail: absolute image URLs
+
+Social platforms require image URLs to start with `https://`. Decap CMS stores images as relative paths like `/uploads/image.jpg`. The fix: in `generateMetadata`, prepend `https://flourandflaneuse.com` if the path isn't already absolute. The layout also sets `metadataBase: new URL('https://flourandflaneuse.com')` as a Next.js-level fallback.
+
+### OG — Files changed
+
+- `app/layout.tsx` — Added `metadataBase`, `openGraph.siteName`, and `twitter.card` defaults so all pages inherit them
+- `app/posts/[slug]/page.tsx` — Expanded `generateMetadata` to include `og:title`, `og:description`, `og:image` (absolute), `og:url`, `og:type: article`, `twitter:card`
+- `app/page.tsx` — Added `generateMetadata` with site title/description and `/emblem.png` as fallback OG image
+- `app/about/page.tsx` — Added `generateMetadata`; uses `aboutPageImage` if set, otherwise falls back to `/emblem.png`
+- `app/category/[category]/page.tsx` — Expanded `generateMetadata` with OG/Twitter tags; uses `/emblem.png` as image
+
+### OG — What will NOT change
 
 - Layout, spacing, typography, fonts
 - Component structure or HTML

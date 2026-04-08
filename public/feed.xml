@@ -3,15 +3,33 @@
   <channel>
     <title>Flour and Flâneuse</title>
     <link>https://flourandflaneuse.com</link>
-    <description>Finding the heart of the world's best destinations and the secrets to the perfect bake, one lesson at a time.</description>
+    <description>A blog about baking, self-improvement, and exploring the world.</description>
     <language>en-us</language>
     <atom:link href="https://flourandflaneuse.com/feed.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Fri, 27 Mar 2026 13:17:49 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 08 Apr 2026 12:31:21 GMT</lastBuildDate>
     
+    <item>
+      <title>Upside-Down Clementine Cake | Recipe Test</title>
+      <link>https://flourandflaneuse.com/posts/2026-03-28-upside-down-clementine-cake-recipe-test/</link>
+      <description>Last night I rewatched one of my favorite movies, The Secret Life of Walter Mitty. I was inspired to try to develop this clementine cake from the movie!</description>
+      <pubDate>Sat, 28 Mar 2026 23:47:00 GMT</pubDate>
+      <guid isPermaLink="true">https://flourandflaneuse.com/posts/2026-03-28-upside-down-clementine-cake-recipe-test/</guid>
+      <enclosure url="https://flourandflaneuse.com/images/uploads/img_4094-1-.jpeg" type="image/jpeg" length="0" />
+      <category>Baking</category>
+    </item>
+    <item>
+      <title>Shokupan (Milk Bread) with a Small Twist</title>
+      <link>https://flourandflaneuse.com/posts/2026-03-26-shokupan-milk-bread-with-a-small-twist/</link>
+      <description>The day I accidently made my niece addicted to milk bread! This bread is traditional with a little twist from a part of my heritage.</description>
+      <pubDate>Thu, 26 Mar 2026 22:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://flourandflaneuse.com/posts/2026-03-26-shokupan-milk-bread-with-a-small-twist/</guid>
+      <enclosure url="https://flourandflaneuse.com/images/uploads/adobe-express-file-1-.jpg" type="image/jpeg" length="0" />
+      <category>Baking</category>
+    </item>
     <item>
       <title>FERRANDI Pâtisserie Diaries Part 2 | Tarte aux Fraises</title>
       <link>https://flourandflaneuse.com/posts/2026-03-26-ferrandi-patesserie-diaries-part-2-tarte-aux-fraises/</link>
-      <description>Day 2: Second attempt at a FERRANDI recipe, read to see how I did!</description>
+      <description>Day 2: Time for another FERRANDI recipe, read to see how I did! Do you think it's ready for a pâtisserie window in France?</description>
       <pubDate>Thu, 26 Mar 2026 17:11:00 GMT</pubDate>
       <guid isPermaLink="true">https://flourandflaneuse.com/posts/2026-03-26-ferrandi-patesserie-diaries-part-2-tarte-aux-fraises/</guid>
       <enclosure url="https://flourandflaneuse.com/images/uploads/img_3998.jpeg" type="image/jpeg" length="0" />
@@ -29,7 +47,7 @@
     <item>
       <title>A WWOOFing Experience - Finding the Heart of Italy</title>
       <link>https://flourandflaneuse.com/posts/2026-03-14-a-wwoofing-experience-finding-the-heart-of-italy/</link>
-      <description>Italy is renowned for its ancient worlds, sizzling summers, and lush Tuscan hills, but I discovered its beauty in a place quite far away from the hustle and bustle of its tourist cities. </description>
+      <description>Finding happiness on the most beautiful vineyard in Italy, read about my first WWOOFing experience ever!</description>
       <pubDate>Sat, 14 Mar 2026 21:40:00 GMT</pubDate>
       <guid isPermaLink="true">https://flourandflaneuse.com/posts/2026-03-14-a-wwoofing-experience-finding-the-heart-of-italy/</guid>
       <enclosure url="https://flourandflaneuse.com/images/uploads/img_3604-1-1-.jpg" type="image/jpeg" length="0" />

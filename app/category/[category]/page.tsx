@@ -11,9 +11,24 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ category: string }> }) {
   const { category } = await params;
   const categoryName = category.charAt(0).toUpperCase() + category.slice(1);
+  const description = `Browse all ${categoryName.toLowerCase()} posts on Flour & Flâneuse`;
+
   return {
     title: `${categoryName} Posts`,
-    description: `Browse all ${categoryName.toLowerCase()} posts`,
+    description,
+    openGraph: {
+      title: `${categoryName} Posts`,
+      description,
+      url: `https://flourandflaneuse.com/category/${category}`,
+      images: [{ url: 'https://flourandflaneuse.com/emblem.png' }],
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${categoryName} Posts`,
+      description,
+      images: ['https://flourandflaneuse.com/emblem.png'],
+    },
   };
 }
 

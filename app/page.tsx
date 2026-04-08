@@ -1,8 +1,31 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { getAllPosts, getFeaturedPosts, getSiteSettings } from '@/lib/posts';
 import PostCard from '@/components/PostCard';
 import NewsletterSignup from '@/components/NewsletterSignup';
+
+export function generateMetadata(): Metadata {
+  const settings = getSiteSettings();
+
+  return {
+    title: settings.title,
+    description: settings.description,
+    openGraph: {
+      title: settings.title,
+      description: settings.description,
+      url: 'https://flourandflaneuse.com',
+      images: [{ url: 'https://flourandflaneuse.com/emblem.png' }],
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: settings.title,
+      description: settings.description,
+      images: ['https://flourandflaneuse.com/emblem.png'],
+    },
+  };
+}
 
 export default function Home() {
   const settings = getSiteSettings();

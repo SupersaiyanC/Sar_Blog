@@ -22,12 +22,21 @@ export async function generateMetadata(): Promise<Metadata> {
   const settings = getSiteSettings();
 
   return {
+    metadataBase: new URL('https://flourandflaneuse.com'),
     title: {
       default: settings.title,
       template: `%s | ${settings.title}`
     },
     description: settings.description,
     authors: [{ name: settings.author }],
+    openGraph: {
+      siteName: settings.title,
+      type: 'website',
+      locale: 'en_US',
+    },
+    twitter: {
+      card: 'summary_large_image',
+    },
   };
 }
 

@@ -1,6 +1,35 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import { getSiteSettings } from '@/lib/posts';
 import { marked } from 'marked';
+
+export function generateMetadata(): Metadata {
+  const settings = getSiteSettings();
+  const description = settings.homeAbout || settings.aboutPage || settings.description || '';
+  const imageUrl = settings.aboutPageImage?.startsWith('http')
+    ? settings.aboutPageImage
+    : settings.aboutPageImage
+    ? `https://flourandflaneuse.com${settings.aboutPageImage}`
+    : 'https://flourandflaneuse.com/emblem.png';
+
+  return {
+    title: 'About',
+    description,
+    openGraph: {
+      title: `About | ${settings.title}`,
+      description,
+      url: 'https://flourandflaneuse.com/about',
+      images: [{ url: imageUrl }],
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `About | ${settings.title}`,
+      description,
+      images: [imageUrl],
+    },
+  };
+}
 
 export default async function About() {
   const settings = getSiteSettings();
