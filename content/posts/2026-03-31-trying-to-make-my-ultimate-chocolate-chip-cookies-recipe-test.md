@@ -27,4 +27,4 @@ In this method, the sugar is whisked with the eggs before liquid butter is intod
 
 **Method 3: Toffee**
 
-This method involves whisking sugar into lukewarm browned butter, followed by the eggs. This method creates a kind of loose partial caramel, as the sugar partially dissolves into the brown butter. The result of this is a cookie that is dense, chewy, very brown buttery, and butterstochy.
+This method involves whisking sugar into lukewarm browned butter, followed by the eggs. This method creates a kind of loose partial caramel, as the sugar partially dissolves into the brown butter. The result of this is a cookie that is dense, chewy, very brown-buttery, and butterstochy.
