@@ -1,9 +1,9 @@
 ---
 title: Trying to Make My Ultimate Chocolate Chip Cookies | Recipe Test
-date: 2026-03-31T12:28:00.000-04:00
-featuredImage: /images/uploads/img_4106.jpeg
-excerpt: My thoughts as I try to develop the "perfect" chocolate chip cookie
-  recipe...so hard!
+date: 2026-04-09T16:50:00.000-04:00
+featuredImage: /images/uploads/img_4122-1-.jpg
+excerpt: Read about my thoughts as I try to develop the "perfect" chocolate chip
+  cookie recipe...so hard! Spoiler I don't know if I'm there just yet.
 category: Baking
 featured: false
 ---
@@ -49,8 +49,6 @@ Below is a table of the final ingredient amounts and their baker’s percentages
 | **Kosher Salt**       | 4g       | **1.9%**  | Flavor enhancement                   |
 | **Baking Soda**       | 4g       | **1.9%**  | Leavening                            |
 
-
-
 I made the cookie dough and let it rest for around 20 hours in the fridge. I then wanted to test some baking temperatures and times, plus the temperature of the dough at the time of baking. Here are my tests below!
 
 ![](/images/uploads/img_4495part1.jpg)
@@ -68,8 +66,6 @@ After baking each cookie and doing taste tests, here are some final ratings.
 | 60°F            | 375°F          | 7          | \-                                               | More dry, soft moistness, but has more dry crunchy crust                    | 3            |
 | 65°F            | 375°F          | 6          | Smashed every 2 minutes                          | Underbaked underneath but the top was golden and would have burned          | 3            |
 
-
-
 This was NOT a controlled experiment, haha. There were so many variables that I can't really make any great final revelations. But I will say that I thought the best results were baked at 350°F, and that this method is promising. The other really great positive was that even after 24 hours, these cookies were still very soft.
 
-I don't think I will write the full recipe for this, but just know that your favorite baker will continue to work on this development.
+I don't think I will write the full recipe for this, but just know that your favorite baker will continue to work on this development. I want to do a direct side-by-side of this with my go-to recipe, with some other outside taste testers helping me. But I will admit that these cookies were quite delicious, for sure a really great first attempt at trying to figure this out!
