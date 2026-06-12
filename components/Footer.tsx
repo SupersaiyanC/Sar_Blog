@@ -90,6 +90,11 @@ export default function Footer() {
 
         <div className="border-t border-alpine-sage-700 mt-6 pt-6 text-center text-mist-300 text-sm">
           <p>© {currentYear} {settings.title}. All rights reserved.</p>
+          <p className="mt-2">
+            <Link href="/manage-comments" className="hover:text-sea-salt-300 transition-colors">
+              Manage Comments
+            </Link>
+          </p>
         </div>
       </div>
     </footer>

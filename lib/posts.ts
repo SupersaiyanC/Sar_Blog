@@ -28,6 +28,14 @@ function normalizeSlug(fileName: string): string {
     .replace(/^-|-$/g, '');          // trim leading/trailing hyphens
 }
 
+export interface RecipeData {
+  prepTime?: string;
+  cookTime?: string;
+  servings?: string;
+  ingredients?: string[];
+  instructions?: string[];
+}
+
 export interface Post {
   slug: string;
   title: string;
@@ -39,6 +47,37 @@ export interface Post {
   content: string;
   gallery?: string[];
   tags?: string[];
+  isRecipe?: boolean;
+  recipe?: RecipeData;
+}
+
+// Parses friendly time strings ("20 mins", "1 hour 30 min") into a total
+// number of minutes, for Recipe JSON-LD. Returns 0 if no recognizable
+// hours/minutes value is found.
+export function parseDurationToMinutes(input?: string): number {
+  if (!input) return 0;
+
+  const hoursMatch = input.match(/(\d+)\s*(?:hours?|hrs?|h\b)/i);
+  const minutesMatch = input.match(/(\d+)\s*(?:minutes?|mins?|m\b)/i);
+
+  const hours = hoursMatch ? parseInt(hoursMatch[1], 10) : 0;
+  const minutes = minutesMatch ? parseInt(minutesMatch[1], 10) : 0;
+
+  return hours * 60 + minutes;
+}
+
+// Converts a total number of minutes into an ISO-8601 duration ("PT1H30M")
+// for Recipe JSON-LD. Returns undefined for 0 so we never emit invalid markup.
+export function minutesToISO8601(totalMinutes: number): string | undefined {
+  if (totalMinutes <= 0) return undefined;
+
+  const hours = Math.floor(totalMinutes / 60);
+  const minutes = totalMinutes % 60;
+
+  let result = 'PT';
+  if (hours > 0) result += `${hours}H`;
+  if (minutes > 0) result += `${minutes}M`;
+  return result;
 }
 
 export function getAllPosts(): Post[] {
@@ -66,6 +105,8 @@ export function getAllPosts(): Post[] {
         content,
         gallery: data.gallery,
         tags: data.tags,
+        isRecipe: data.isRecipe || false,
+        recipe: data.recipe,
       } as Post;
     });
 
@@ -117,6 +158,8 @@ export async function getPostBySlug(slug: string): Promise<Post & { htmlContent:
     htmlContent,
     gallery: data.gallery,
     tags: data.tags,
+    isRecipe: data.isRecipe || false,
+    recipe: data.recipe,
   };
 }
 

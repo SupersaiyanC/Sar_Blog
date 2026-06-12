@@ -27,6 +27,16 @@
   status = 200
 
 [[redirects]]
+  from = "/api/likes"
+  to = "/.netlify/functions/likes"
+  status = 200
+
+[[redirects]]
+  from = "/api/comments"
+  to = "/.netlify/functions/comments"
+  status = 200
+
+[[redirects]]
   from = "/admin/*"
   to = "/admin/index.html"
   status = 200

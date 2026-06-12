@@ -209,3 +209,49 @@ Social platforms require image URLs to start with `https://`. Decap CMS stores i
 - Component structure or HTML
 - CMS configuration or content files
 - Netlify/deployment config
+
+---
+
+## Recipe Cards, Jump-to-Recipe, Likes & Comments (2026-06-13)
+
+### What this change does
+
+Adds food-blog features so the site behaves like a real recipe blog: structured Recipe Cards (with Google rich-result markup), a "Jump to Recipe" button, a "Love this" likes button, and a comments/notes section on every post — plus a private page for Rayaan to moderate comments.
+
+### Recipe Cards (opt-in per post)
+
+- New CMS fields on every post: **"This post has a recipe"** toggle (`isRecipe`) and a collapsible **"Recipe Details"** section (`recipe`: prep time, cook time, servings, ingredients list, instructions list). Both optional — existing posts are unaffected until Sarita fills them in.
+- When `isRecipe` is on and recipe details are filled in:
+  - A **"Jump to Recipe ↓"** pill button appears near the top of the post, scrolling to...
+  - A styled **Recipe Card** (`components/RecipeCard.tsx`) rendered after the post body, with prep/cook time + servings badges, an ingredients list, and numbered instructions (`id="recipe"`).
+  - A `Recipe` JSON-LD `<script>` tag is added to the page (`app/posts/[slug]/page.tsx`) so Google can show recipe rich results — includes ingredients, instructions, prep/cook/total time (converted from friendly strings like "20 mins" to ISO-8601 via `parseDurationToMinutes`/`minutesToISO8601` in `lib/posts.ts`).
+
+### Likes ("Love this")
+
+- `components/LikeButton.tsx` — heart button + count on every post, near the date. One like per browser via `localStorage`.
+- `netlify/functions/likes.js` — stores per-post counts in **Netlify Blobs** (store `likes`). `GET /api/likes?slug=` reads, `POST /api/likes` increments.
+- `lib/likes.ts` — `getLikeCount(slug)` reads the count at build time (falls back to 0 if Blobs isn't reachable, e.g. local `npm run build`).
+- **Likes on Google**: for recipe posts with ≥1 like, the JSON-LD includes `aggregateRating` (5-star, `ratingCount` = like count) — this is the closest real equivalent to "likes" that Google's recipe rich results support. The count reflects the like total as of the last publish/deploy, not live.
+
+### Comments / Notes
+
+- `components/Comments.tsx` — name + message form (no account needed) plus the list of existing comments, shown on every post above the "More posts" link. Includes a hidden honeypot field and length limits (name ≤60 chars, message ≤1000 chars) for basic spam protection.
+- `netlify/functions/comments.js` — stores comments per post slug in **Netlify Blobs** (store `comments`). Public `GET`/`POST`; `DELETE` and admin replies require a logged-in Netlify Identity user.
+
+### Comment moderation
+
+- New private page **`/manage-comments`** (`app/manage-comments/page.tsx` + `components/ManageComments.tsx`), linked from the footer. Logs in with the same Netlify Identity account used for `/admin`. Lists every post's comments, with **Delete** and **Reply** (posted as an "Author reply" badge) for each.
+
+### New dependency
+
+- `@netlify/blobs` — added to `package.json` for the likes/comments storage.
+
+### Local testing note
+
+Likes and comments are Netlify Functions, so they only work under `netlify dev` (port 8888), same as the existing newsletter subscribe function — they will not work under plain `npm run dev`.
+
+### What will NOT change
+
+- Layout, spacing, typography, fonts elsewhere on the site
+- Existing posts (recipe fields are opt-in and default to empty)
+- Editorial workflow / deploy-credit behavior

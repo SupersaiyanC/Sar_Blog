@@ -52,6 +52,40 @@ collections:
           required: false,
           hint: "Optional tags for the post"
         }
+      - {
+          label: "This post has a recipe",
+          name: "isRecipe",
+          widget: "boolean",
+          default: false,
+          hint: "Turn this on to show a Recipe Card, a 'Jump to Recipe' button, and help this post show up in Google recipe searches"
+        }
+      - {
+          label: "Recipe Details",
+          name: "recipe",
+          widget: "object",
+          required: false,
+          collapsed: true,
+          hint: "Only needed if 'This post has a recipe' is on",
+          fields: [
+            { label: "Prep Time", name: "prepTime", widget: "string", required: false, hint: "e.g. 20 mins" },
+            { label: "Cook Time", name: "cookTime", widget: "string", required: false, hint: "e.g. 45 mins" },
+            { label: "Servings", name: "servings", widget: "string", required: false, hint: "e.g. Serves 8" },
+            {
+              label: "Ingredients",
+              name: "ingredients",
+              widget: "list",
+              required: false,
+              hint: "Add one ingredient per line, e.g. '125g all-purpose flour'"
+            },
+            {
+              label: "Instructions",
+              name: "instructions",
+              widget: "list",
+              required: false,
+              hint: "Add one step per line, in order"
+            }
+          ]
+        }
 
   - name: "settings"
     label: "Site Settings"
