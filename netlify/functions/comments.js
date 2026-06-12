@@ -8,6 +8,7 @@
 // - DELETE { slug, commentId } -> admin only, removes a comment
 
 const { getStore } = require('@netlify/blobs');
+const { randomUUID } = require('crypto');
 
 const SLUG_RE = /^[a-z0-9-]+$/;
 const MAX_NAME_LENGTH = 60;
@@ -93,7 +94,7 @@ exports.handler = async (event, context) => {
 
     const comments = (await store.get(slug, { type: 'json' })) || [];
     const comment = {
-      id: crypto.randomUUID(),
+      id: randomUUID(),
       name: trimmedName,
       message: trimmedMessage,
       date: new Date().toISOString(),
