@@ -270,7 +270,7 @@ When a visitor leaves a new comment on any post, `netlify/functions/comments.js`
 
 ### New env var required
 
-- `COMMENT_NOTIFY_EMAIL` — the address that receives notifications (set to `sarita.k.das@gmail.com`). Added to `.env.local` for local testing. **Must also be added in the Netlify dashboard** (Site settings → Environment variables) for this to work on the live site — see "Known Issues / History" note below.
+- `COMMENT_NOTIFY_EMAIL` — the address that receives notifications (Sarita's email). Added to `.env.local` for local testing. **Must also be added in the Netlify dashboard** (Site settings → Environment variables) for this to work on the live site — see "Known Issues / History" note below.
 
 ### Files changed
 
