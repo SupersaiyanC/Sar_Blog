@@ -73,6 +73,19 @@ exports.handler = async (event, context) => {
     return { statusCode: 204, headers, body: '' };
   }
 
+  try {
+    return await handleRequest(event, context, headers);
+  } catch (err) {
+    console.error('comments function error:', err);
+    return {
+      statusCode: 500,
+      headers,
+      body: JSON.stringify({ error: err instanceof Error ? err.message : 'Unknown error' }),
+    };
+  }
+};
+
+async function handleRequest(event, context, headers) {
   const store = getStore('comments');
 
   if (event.httpMethod === 'GET') {
@@ -179,4 +192,4 @@ exports.handler = async (event, context) => {
   }
 
   return { statusCode: 405, headers, body: JSON.stringify({ error: 'Method not allowed' }) };
-};
+}
