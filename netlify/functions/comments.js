@@ -7,7 +7,7 @@
 //        { slug, name, message, isAdminReply: true } -> admin only, adds a reply
 // - DELETE { slug, commentId } -> admin only, removes a comment
 
-const { getStore } = require('@netlify/blobs');
+const { connectLambda, getStore } = require('@netlify/blobs');
 const { randomUUID } = require('crypto');
 
 const SLUG_RE = /^[a-z0-9-]+$/;
@@ -86,6 +86,7 @@ exports.handler = async (event, context) => {
 };
 
 async function handleRequest(event, context, headers) {
+  connectLambda(event);
   const store = getStore('comments');
 
   if (event.httpMethod === 'GET') {

@@ -1,7 +1,7 @@
 // Netlify serverless function — GET/POST /api/likes
 // Stores a like count per post slug in Netlify Blobs.
 
-const { getStore } = require('@netlify/blobs');
+const { connectLambda, getStore } = require('@netlify/blobs');
 
 const SLUG_RE = /^[a-z0-9-]+$/;
 
@@ -18,6 +18,7 @@ exports.handler = async (event) => {
   }
 
   try {
+    connectLambda(event);
     const store = getStore('likes');
 
     if (event.httpMethod === 'GET') {
