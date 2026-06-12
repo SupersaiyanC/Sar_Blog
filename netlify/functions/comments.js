@@ -18,6 +18,49 @@ function isAdmin(context) {
   return Boolean(context.clientContext && context.clientContext.user);
 }
 
+function escapeHtml(str) {
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+// Emails Sarita via Brevo (reusing the newsletter API key) whenever a visitor
+// leaves a new comment, so she doesn't have to keep checking /manage-comments.
+async function sendCommentNotification(slug, comment) {
+  const { BREVO_API_KEY, BREVO_SENDER_NAME, BREVO_SENDER_EMAIL, COMMENT_NOTIFY_EMAIL } = process.env;
+
+  if (!BREVO_API_KEY || !BREVO_SENDER_EMAIL || !COMMENT_NOTIFY_EMAIL) {
+    console.error('Skipping comment notification — missing Brevo/notification env vars');
+    return;
+  }
+
+  try {
+    await fetch('https://api.brevo.com/v3/smtp/email', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'api-key': BREVO_API_KEY,
+      },
+      body: JSON.stringify({
+        sender: { name: BREVO_SENDER_NAME || 'Flour & Flaneuse', email: BREVO_SENDER_EMAIL },
+        to: [{ email: COMMENT_NOTIFY_EMAIL }],
+        subject: `New comment from ${comment.name}`,
+        htmlContent: `
+          <p><strong>${escapeHtml(comment.name)}</strong> left a new comment on
+          <a href="https://flourandflaneuse.com/posts/${slug}/">${slug}</a>:</p>
+          <blockquote style="margin:0;padding:12px;background:#f4f6f7;border-radius:8px;">${escapeHtml(comment.message)}</blockquote>
+          <p><a href="https://flourandflaneuse.com/manage-comments/">Reply or delete this comment</a></p>
+        `,
+      }),
+    });
+  } catch (err) {
+    console.error('Comment notification email failed:', err instanceof Error ? err.message : err);
+  }
+}
+
 exports.handler = async (event, context) => {
   const headers = {
     'Content-Type': 'application/json',
@@ -102,6 +145,10 @@ exports.handler = async (event, context) => {
     };
     comments.push(comment);
     await store.setJSON(slug, comments);
+
+    if (!isAdminReply) {
+      await sendCommentNotification(slug, comment);
+    }
 
     return { statusCode: 200, headers, body: JSON.stringify({ comments }) };
   }

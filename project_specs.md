@@ -255,3 +255,28 @@ Likes and comments are Netlify Functions, so they only work under `netlify dev` 
 - Layout, spacing, typography, fonts elsewhere on the site
 - Existing posts (recipe fields are opt-in and default to empty)
 - Editorial workflow / deploy-credit behavior
+
+---
+
+## Comment Email Notifications (2026-06-13)
+
+### What this change does
+
+When a visitor leaves a new comment on any post, `netlify/functions/comments.js` now emails Sarita so she doesn't have to keep checking `/manage-comments`. Reuses the existing Brevo account/API key that already powers the newsletter — no new sign-ups.
+
+- Only fires for real visitor comments (`isAdminReply` is false). Sarita's own replies posted from `/manage-comments` do not trigger an email to herself.
+- The email includes the commenter's name, their message, a link to the post, and a link to `/manage-comments` to reply or delete.
+- If the email send fails for any reason, it's logged and ignored — posting the comment itself still succeeds.
+
+### New env var required
+
+- `COMMENT_NOTIFY_EMAIL` — the address that receives notifications (set to `sarita.k.das@gmail.com`). Added to `.env.local` for local testing. **Must also be added in the Netlify dashboard** (Site settings → Environment variables) for this to work on the live site — see "Known Issues / History" note below.
+
+### Files changed
+
+- `netlify/functions/comments.js` — added `escapeHtml()` and `sendCommentNotification(slug, comment)`, called after a new visitor comment is saved
+- `.env.local` / `.env.example` — added `COMMENT_NOTIFY_EMAIL`
+
+### Fix for "Something went wrong" comment error (2026-06-13)
+
+The live comment form was failing because `netlify/functions/comments.js` called `crypto.randomUUID()`, relying on a global `crypto` object that Netlify's default Node Functions runtime doesn't provide. Fixed by `const { randomUUID } = require('crypto')` and calling `randomUUID()` directly.
