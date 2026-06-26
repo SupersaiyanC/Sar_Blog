@@ -70,6 +70,8 @@ collections:
             { label: "Prep Time", name: "prepTime", widget: "string", required: false, hint: "e.g. 20 mins" },
             { label: "Cook Time", name: "cookTime", widget: "string", required: false, hint: "e.g. 45 mins" },
             { label: "Servings", name: "servings", widget: "string", required: false, hint: "e.g. Serves 8" },
+            { label: "Cuisine", name: "cuisine", widget: "string", required: false, hint: "e.g. French, Japanese, Italian — helps Google categorise the recipe" },
+            { label: "Recipe Category", name: "recipeCategory", widget: "string", required: false, hint: "e.g. Dessert, Main Course, Appetizer, Breakfast — helps Google categorise the recipe" },
             {
               label: "Ingredients",
               name: "ingredients",

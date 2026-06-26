@@ -34,6 +34,8 @@ export interface RecipeData {
   servings?: string;
   ingredients?: string[];
   instructions?: string[];
+  cuisine?: string;
+  recipeCategory?: string;
 }
 
 export interface Post {

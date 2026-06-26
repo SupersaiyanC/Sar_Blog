@@ -12,6 +12,8 @@ recipe:
   prepTime: "40 minutes"
   cookTime: "40 minutes"
   servings: "1 loaf (8x4-inch)"
+  cuisine: "American"
+  recipeCategory: "Dessert"
   ingredients:
     - "95g all-purpose flour"
     - "95g almond flour"

@@ -56,6 +56,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
     const prepMinutes = parseDurationToMinutes(post.recipe.prepTime);
     const cookMinutes = parseDurationToMinutes(post.recipe.cookTime);
 
+    const postUrl = `https://flourandflaneuse.com/posts/${slug}`;
     recipeJsonLd = {
       '@context': 'https://schema.org/',
       '@type': 'Recipe',
@@ -64,6 +65,10 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
       author: { '@type': 'Person', name: settings.author },
       datePublished: post.date,
       description: post.excerpt,
+      url: postUrl,
+      ...(post.recipe.cuisine && { recipeCuisine: post.recipe.cuisine }),
+      ...(post.recipe.recipeCategory && { recipeCategory: post.recipe.recipeCategory }),
+      ...(post.tags?.length && { keywords: post.tags.join(', ') }),
       ...(minutesToISO8601(prepMinutes) && { prepTime: minutesToISO8601(prepMinutes) }),
       ...(minutesToISO8601(cookMinutes) && { cookTime: minutesToISO8601(cookMinutes) }),
       ...(minutesToISO8601(prepMinutes + cookMinutes) && {
@@ -72,9 +77,11 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
       ...(post.recipe.servings && { recipeYield: post.recipe.servings }),
       ...(post.recipe.ingredients?.length && { recipeIngredient: post.recipe.ingredients }),
       ...(post.recipe.instructions?.length && {
-        recipeInstructions: post.recipe.instructions.map((step) => ({
+        recipeInstructions: post.recipe.instructions.map((step, i) => ({
           '@type': 'HowToStep',
+          name: step,
           text: step,
+          url: `${postUrl}#step-${i + 1}`,
         })),
       }),
       ...(likeCount >= 1 && {
