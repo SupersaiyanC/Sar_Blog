@@ -1,7 +1,7 @@
 ---
 title: Traveling Recipes | Apple Cake
 date: 2026-06-27T09:35:00.000+09:00
-featuredImage: /images/uploads/4335bd58-f552-485a-bbb3-0b857493f426-1-1-.jpeg
+featuredImage: /images/uploads/img_5296-1-.jpg
 excerpt: The most simple and delicious apple cake that has made appearences in
   multiple journeys and been eating by many new friends!
 category: Baking
