@@ -1,4 +1,4 @@
-import { getAllPosts, getPostBySlug, getSiteSettings, minutesToISO8601, parseDurationToMinutes } from '@/lib/posts';
+import { getAllPosts, getPostBySlug, getSiteSettings, minutesToISO8601, parseDurationToMinutes, toLines } from '@/lib/posts';
 import { getLikeCount } from '@/lib/likes';
 import Image from 'next/image';
 import { format } from 'date-fns';
@@ -75,9 +75,9 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         totalTime: minutesToISO8601(prepMinutes + cookMinutes),
       }),
       ...(post.recipe.servings && { recipeYield: post.recipe.servings }),
-      ...(post.recipe.ingredients?.length && { recipeIngredient: post.recipe.ingredients }),
-      ...(post.recipe.instructions?.length && {
-        recipeInstructions: post.recipe.instructions.map((step, i) => ({
+      ...(toLines(post.recipe.ingredients).length && { recipeIngredient: toLines(post.recipe.ingredients) }),
+      ...(toLines(post.recipe.instructions).length && {
+        recipeInstructions: toLines(post.recipe.instructions).map((step, i) => ({
           '@type': 'HowToStep',
           name: step,
           text: step,

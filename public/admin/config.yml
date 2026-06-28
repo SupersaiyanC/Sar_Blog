@@ -75,18 +75,16 @@ collections:
             {
               label: "Ingredients",
               name: "ingredients",
-              widget: "list",
+              widget: "text",
               required: false,
-              hint: "Add one ingredient per line, e.g. '125g all-purpose flour'",
-              field: { label: "Ingredient", name: "ingredient", widget: "string" }
+              hint: "Add one ingredient per line, e.g. '125g all-purpose flour'"
             },
             {
               label: "Instructions",
               name: "instructions",
-              widget: "list",
+              widget: "text",
               required: false,
-              hint: "Add one step per line, in order",
-              field: { label: "Step", name: "step", widget: "string" }
+              hint: "Add one step per line, in order"
             }
           ]
         }

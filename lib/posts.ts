@@ -32,10 +32,16 @@ export interface RecipeData {
   prepTime?: string;
   cookTime?: string;
   servings?: string;
-  ingredients?: string[];
-  instructions?: string[];
+  ingredients?: string | string[];
+  instructions?: string | string[];
   cuisine?: string;
   recipeCategory?: string;
+}
+
+export function toLines(val?: string | string[]): string[] {
+  if (!val) return [];
+  if (Array.isArray(val)) return val.filter(Boolean);
+  return val.split('\n').filter(Boolean);
 }
 
 export interface Post {

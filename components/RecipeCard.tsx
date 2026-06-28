@@ -1,7 +1,9 @@
-import { RecipeData } from '@/lib/posts';
+import { RecipeData, toLines } from '@/lib/posts';
 
 export default function RecipeCard({ recipe }: { recipe: RecipeData }) {
-  const { prepTime, cookTime, servings, ingredients, instructions } = recipe;
+  const { prepTime, cookTime, servings } = recipe;
+  const ingredients = toLines(recipe.ingredients);
+  const instructions = toLines(recipe.instructions);
   const stats = [
     { label: 'Prep Time', value: prepTime },
     { label: 'Cook Time', value: cookTime },
