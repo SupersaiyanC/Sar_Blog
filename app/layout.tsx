@@ -37,6 +37,13 @@ export async function generateMetadata(): Promise<Metadata> {
     twitter: {
       card: 'summary_large_image',
     },
+    alternates: {
+      types: {
+        'application/rss+xml': [
+          { url: 'https://flourandflaneuse.com/feed.xml', title: settings.title },
+        ],
+      },
+    },
   };
 }
 

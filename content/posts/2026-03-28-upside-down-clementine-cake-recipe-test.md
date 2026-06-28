@@ -14,40 +14,40 @@ recipe:
   servings: "1 loaf (8x4-inch)"
   cuisine: "American"
   recipeCategory: "Dessert"
-  ingredients: |
-    95g all-purpose flour
-    95g almond flour
-    1/2 tsp salt
-    1 tsp baking powder
-    170g whole clementines (about 2 medium-sized), plus 1 extra clementine for the bottom of the pan
-    60g full-fat sour cream, room temperature
-    60ml milk (2% or whole)
-    1 tsp vanilla extract
-    113g butter, room temperature
-    200g sugar, plus 1 tablespoon for the pan
-    2 large eggs, room temperature
-    150g powdered sugar (for the icing)
-    1 tablespoon sour cream (for the icing)
-    Zest of 1 clementine, plus extra for sprinkling on top
-    Juice of 1 clementine
-    Milk, to desired icing consistency
-  instructions: |
-    Wash 4 whole clementines (you'll need 4 unless they're very small or very large).
-    Prick 2 of the whole clementines all over with a meat thermometer tip, sharp knife, or fork, making sure to go through the full peel so they don't explode in the microwave.
-    Place the clementines in a microwave-safe bowl and microwave on high for 8 minutes. Let cool for about 10 minutes.
-    Whisk the flour, almond flour, baking powder, and salt together in a medium mixing bowl.
-    Once cool enough to handle, break the clementines apart and pulse in a food processor or blender about 15 times.
-    Add the sour cream and milk to the clementines and pulse until almost smooth, like a smoothie. Remove any peel pieces bigger than a pea, then stir in the vanilla.
-    Preheat the oven to 350°F (175°C).
-    Beat the room-temperature butter until smooth and creamy, about 1 minute. Add the 200g sugar and beat until smooth and fluffy, about 2 minutes.
-    Add the eggs one at a time, beating until each is fully incorporated, scraping down the bowl as you go.
-    Mix in the flour mixture until about 60-70% combined, then add the clementine mixture and mix until no dry flour or pockets of liquid remain.
-    Line the loaf pan with parchment and sprinkle 1 tablespoon of sugar on the bottom. Arrange 4-5 clementine slices (about 1/4-inch thick) over the sugar, then pour in the batter and smooth the top.
-    Bake at 350°F for 35-45 minutes, rotating halfway through, until deep golden brown and a tester comes out clean (avoid testing all the way to the bottom where the fruit is).
-    Cool in the pan for 15 minutes, then invert onto a wire rack, carefully peel off the parchment, and let cool completely (60-90 minutes).
-    For the glaze, whisk together the powdered sugar, clementine zest, clementine juice, and sour cream.
-    Add small splashes of milk (no more than 1 teaspoon at a time) until the glaze reaches your desired consistency.
-    Pour the glaze over the cooled cake and sprinkle with the remaining clementine zest.
+  ingredients:
+    - "95g all-purpose flour"
+    - "95g almond flour"
+    - "1/2 tsp salt"
+    - "1 tsp baking powder"
+    - "170g whole clementines (about 2 medium-sized), plus 1 extra clementine for the bottom of the pan"
+    - "60g full-fat sour cream, room temperature"
+    - "60ml milk (2% or whole)"
+    - "1 tsp vanilla extract"
+    - "113g butter, room temperature"
+    - "200g sugar, plus 1 tablespoon for the pan"
+    - "2 large eggs, room temperature"
+    - "150g powdered sugar (for the icing)"
+    - "1 tablespoon sour cream (for the icing)"
+    - "Zest of 1 clementine, plus extra for sprinkling on top"
+    - "Juice of 1 clementine"
+    - "Milk, to desired icing consistency"
+  instructions:
+    - "Wash 4 whole clementines (you'll need 4 unless they're very small or very large)."
+    - "Prick 2 of the whole clementines all over with a meat thermometer tip, sharp knife, or fork, making sure to go through the full peel so they don't explode in the microwave."
+    - "Place the clementines in a microwave-safe bowl and microwave on high for 8 minutes. Let cool for about 10 minutes."
+    - "Whisk the flour, almond flour, baking powder, and salt together in a medium mixing bowl."
+    - "Once cool enough to handle, break the clementines apart and pulse in a food processor or blender about 15 times."
+    - "Add the sour cream and milk to the clementines and pulse until almost smooth, like a smoothie. Remove any peel pieces bigger than a pea, then stir in the vanilla."
+    - "Preheat the oven to 350°F (175°C)."
+    - "Beat the room-temperature butter until smooth and creamy, about 1 minute. Add the 200g sugar and beat until smooth and fluffy, about 2 minutes."
+    - "Add the eggs one at a time, beating until each is fully incorporated, scraping down the bowl as you go."
+    - "Mix in the flour mixture until about 60-70% combined, then add the clementine mixture and mix until no dry flour or pockets of liquid remain."
+    - "Line the loaf pan with parchment and sprinkle 1 tablespoon of sugar on the bottom. Arrange 4-5 clementine slices (about 1/4-inch thick) over the sugar, then pour in the batter and smooth the top."
+    - "Bake at 350°F for 35-45 minutes, rotating halfway through, until deep golden brown and a tester comes out clean (avoid testing all the way to the bottom where the fruit is)."
+    - "Cool in the pan for 15 minutes, then invert onto a wire rack, carefully peel off the parchment, and let cool completely (60-90 minutes)."
+    - "For the glaze, whisk together the powdered sugar, clementine zest, clementine juice, and sour cream."
+    - "Add small splashes of milk (no more than 1 teaspoon at a time) until the glaze reaches your desired consistency."
+    - "Pour the glaze over the cooled cake and sprinkle with the remaining clementine zest."
 ---
 If you've never seen *The Secret Life of Walter Mitty*, add it to your watch list for this week! It's a little wacky at first, but give it a chance, and you might really enjoy it. The story is very heartfelt and really makes you think about life and traveling...I won't give too much away.
 

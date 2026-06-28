@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /manage-comments/
+
+Sitemap: https://flourandflaneuse.com/sitemap.xml
