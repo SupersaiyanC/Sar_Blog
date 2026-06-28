@@ -1,0 +1,51 @@
+---
+title: Traveling Recipes | Apple Cake
+date: 2026-06-27T09:35:00.000+09:00
+featuredImage: /images/uploads/img_5296-1-.jpg
+excerpt: The most simple and delicious apple cake that has made appearences in
+  multiple journeys and been eating by many new friends!
+category: Baking
+featured: true
+isRecipe: true
+recipe:
+  cookTime: 50-55 minutes
+  recipeCategory: Dessert
+  ingredients:
+    - 300 g all-purpose flour (or cake flour)
+    - 3/4 tsp baking soda
+    - 3/4 tsp salt
+    - 1 tsp cinnamon
+    - 1/8 tsp ground clove
+    - 1/4 tsp nutmeg
+    - 250 g white sugar
+    - 250 ml neutral oil (approx. 230 g)
+    - 2 large eggs (room temperature)
+    - 1 1/2 tsp vanilla extract
+    - 2 cups apples, peeled and chopped into small chunks
+  instructions:
+    - Preheat oven to 350F/180C.  Grease and line a 21cm cake pan.
+    - Whisk together flour, baking soda, salt, and spices in a bowl.
+    - Whisk oil and sugar in a seperate bowl until combined. Add the eggs and
+      whisk until thoroughly combined.
+    - Pour wet ingredients into dry ingredients and mix until just combined. Add
+      the apples and continue to mix until combined. Ensure no visible flour
+      remains.
+    - Pour batter into your lined pan. Bake 45-55 minutes until a knife inserted
+      comes out clean.
+    - Cool around 10 minutes before turning out and serving. Best enjoyed
+      freshly warm from the oven!
+  cuisine: ""
+  servings: ""
+  prepTime: Space here
+---
+Rainy days on the vineyard in Italy meant a few things ... no work, yummy food, movies, and always some sort of cake. Surprisingly, I wasn't that much of a baker during this time, but my fellow WWOOFers made some delicious creations that would disappear in pretty much a day or two. The two most notable were Amelia from Australia's banana cake and Susan from Scotland's apple cake. This post is about the latter of the two, but both are scrumptious. Honestly, pure happiness was sitting on the couch with a fresh moka pot-made espresso (in our favorite colorful cups), eating a plate with slices of both of these cakes.
+
+![](/images/uploads/img_3289-1-.jpg)
+
+This recipe made an appearance in our WWOOFer recipe book, which we wrote by hand in hopes of future WWOOFers adding their favorite recipes too. 
+
+![](/images/uploads/img_3300.jpeg)
+
+Since leaving the vineyard, I will periodically get a message in our groupchat, featuring an image of a freshly made apple cake. It's a nice way for us to all connect and remember fun memories, I know that every time I make the cake in future I will think of them all and send them a photo.
+
+I'm currently in Japan and have made the apple cake for two of our WWOOFing locations. I love how it is a way to connect my past memories and friendships together. Of course it always tastes a bit different between Italian, American, and Japanese ingredients, but overall the comfort it brings is always the same. After eating the cake at our last WWOOFing place, we played a game of choose your deathbed meal. Not to brag, but two WWOOFers literally said it was this cake. So it must be good right?
