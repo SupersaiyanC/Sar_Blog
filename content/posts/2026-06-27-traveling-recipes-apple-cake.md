@@ -11,9 +11,9 @@ recipe:
   cookTime: 50-55 minutes
   recipeCategory: Dessert
   ingredients:
-    - Nospace
+    - No space
   instructions:
-    - Nospace
+    - No space
   cuisine: Space here
   servings: Space here
   prepTime: Space here
