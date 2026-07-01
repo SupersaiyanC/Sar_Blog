@@ -35,8 +35,8 @@ recipe:
     - Cool around 10 minutes before turning out and serving. Best enjoyed
       freshly warm from the oven!
   cuisine: ""
-  servings: ""
-  prepTime: Space here
+  servings: "10"
+  prepTime: ""
 ---
 Rainy days on the vineyard in Italy meant a few things ... no work, yummy food, movies, and always some sort of cake. Surprisingly, I wasn't that much of a baker during this time, but my fellow WWOOFers made some delicious creations that would disappear in pretty much a day or two. The two most notable were Amelia from Australia's banana cake and Susan from Scotland's apple cake. This post is about the latter of the two, but both are scrumptious. Honestly, pure happiness was sitting on the couch with a fresh moka pot-made espresso (in our favorite colorful cups), eating a plate with slices of both of these cakes.
 
