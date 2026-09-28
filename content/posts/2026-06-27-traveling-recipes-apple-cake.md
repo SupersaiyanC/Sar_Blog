@@ -21,7 +21,6 @@ recipe:
     - 250 ml neutral oil (approx. 230 g)
     - 2 large eggs (room temperature)
     - 1 1/2 tsp vanilla extract
-    - 1 1/2 tsp vanilla extract
     - 2 cups apples, peeled and chopped into small chunks
   instructions:
     - Preheat oven to 350F/180C.  Grease and line a 21cm cake pan.
