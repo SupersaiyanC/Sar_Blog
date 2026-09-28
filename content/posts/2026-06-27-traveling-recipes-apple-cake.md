@@ -1,5 +1,5 @@
 ---
-title: Traveling Recipes | Apple Cake
+title: Traveling Recipes | The Most Comforting Apple Cake
 date: 2026-06-27T09:35:00.000+09:00
 featuredImage: /images/uploads/img_5296-1-.jpg
 excerpt: The most simple and delicious apple cake that has made appearences in
@@ -21,12 +21,13 @@ recipe:
     - 250 ml neutral oil (approx. 230 g)
     - 2 large eggs (room temperature)
     - 1 1/2 tsp vanilla extract
+    - 1 1/2 tsp vanilla extract
     - 2 cups apples, peeled and chopped into small chunks
   instructions:
     - Preheat oven to 350F/180C.  Grease and line a 21cm cake pan.
     - Whisk together flour, baking soda, salt, and spices in a bowl.
-    - Whisk oil and sugar in a seperate bowl until combined. Add the eggs and
-      whisk until thoroughly combined.
+    - Whisk oil and sugar in a seperate bowl until combined. Add the egg and
+      vanilla, and whisk until thoroughly combined.
     - Pour wet ingredients into dry ingredients and mix until just combined. Add
       the apples and continue to mix until combined. Ensure no visible flour
       remains.
