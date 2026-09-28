@@ -1,5 +1,5 @@
 ---
-title: Traveling Recipes | Apple Cake
+title: Traveling Recipes | The Most Comforting Apple Cake
 date: 2026-06-27T09:35:00.000+09:00
 featuredImage: /images/uploads/img_5296-1-.jpg
 excerpt: The most simple and delicious apple cake that has made appearences in
